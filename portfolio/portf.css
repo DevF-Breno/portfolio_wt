@@ -8,6 +8,26 @@ body {
 }*/
 
 .navbar-brand img {
-    width: 180px;
+    width: 100px;
+}
+
+.produto1 img {
+    width: 250px;
+}
+
+.produto2 img{
+    width: 250px;
+}
+
+.produto3 img {
+    width: 250px;
+}
+
+.produto4 img {
+    width: 250px;
+}
+
+.sobre_img img {
+    width: 300px;
 }
 /*breno*/
