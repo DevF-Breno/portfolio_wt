@@ -12,22 +12,36 @@ body {
 }
 
 .produto1 img {
-    width: 250px;
+    width: 255px;
+    border-radius: 50%;
 }
 
 .produto2 img{
-    width: 250px;
+    width: 255px;
+    border-radius: 50%;
 }
 
 .produto3 img {
-    width: 250px;
+    width: 255px;
+    border-radius: 50%;
 }
 
 .produto4 img {
-    width: 250px;
+    width: 255px;
+    border-radius: 50%;
 }
 
 .sobre_img img {
     width: 300px;
 }
 /*breno*/
+
+.produtos{
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    grid-area: auto;
+    position: relative;
+    margin: 0px 80px;
+    gap: 15px;
+}
