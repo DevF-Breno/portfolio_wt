@@ -1,3 +1,11 @@
 body {
     background-color: antiquewhite;
 }
+
+/*.navbar {
+    width: ; /* ou um valor fixo, ex: 80% ou 1200px 
+}*/
+
+.navbar-brand img {
+    width: 180px;
+}
