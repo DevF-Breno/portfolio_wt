@@ -11,6 +11,68 @@ body {
     width: 100px;
 }
 
+.apresentacao {
+    margin: 30px;
+}
+
+.apresentacao {
+  position: relative;
+  color: #f6e7b9;; /* Ou a cor que contraste bem com a imagem */
+  padding: 200px;/*espaço interno da imagem*/
+  text-align: center;
+}
+
+.backimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;           /* imagem atrás */
+  opacity: 0.8;         /* opcional: deixa a imagem mais suave */
+}
+
+.apresentacao p,
+.apresentacao h1 {
+  position: relative;
+  z-index: 1;           /* texto na frente */
+}
+
+.informe {
+    display: flex;          /* Coloca os filhos lado a lado */
+  align-items: center;    /* Alinha verticalmente ao centro (opcional) */
+  gap: 40px;              /* Espaçamento entre a imagem e o texto */
+  padding: 40px;
+  margin: 200px 0px 300px 200px;
+}
+
+.sobre_img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.sobre {
+  max-width: 600px;       /* Limita a largura do texto */
+  color: #D7C48D;
+}
+
+/*breno*/
+
+/*jessica*/
+.produtos{
+    text-align: center;
+    display: flex;/*faz que os itens filhos se tornem flexiveis*/
+    grid-area: auto;/*os itens se alinham na horizontal*/
+    gap: 15px;/*espaço de 15px entre os itens*/
+    flex-wrap: wrap;/*faz que as imagens quebrem linha*/
+    margin-left: 200px;
+    color: #D7C48D;
+}/*jessica*/
+
+/*breno*/
 .produto1 img {
     width: 255px;
     border-radius: 50%;
@@ -33,15 +95,18 @@ body {
 
 .sobre_img img {
     width: 300px;
-}
-/*breno*/
+}/*breno*/
 
-.produtos{
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    grid-area: auto;
-    position: relative;
-    margin: 0px 80px;
-    gap: 15px;
+
+
+
+
+@media (max-widht:480px){/*Cria formatação especifica para telas até 400px*/
+    #sobre{
+        flex-direction: column;
+    }
 }
+
+/*#produtos img{
+    width: 50%;
+}*/
