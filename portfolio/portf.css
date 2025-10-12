@@ -30,7 +30,7 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: 0;           /* imagem atrás */
-  opacity: 0.8;         /* opcional: deixa a imagem mais suave */
+  /*opacity: ; */        /* opcional: deixa a imagem mais suave */
 }
 
 .apresentacao p,
@@ -42,9 +42,20 @@ body {
 .informe {
     display: flex;          /* Coloca os filhos lado a lado */
   align-items: center;    /* Alinha verticalmente ao centro (opcional) */
+  flex-wrap: wrap;
   gap: 40px;              /* Espaçamento entre a imagem e o texto */
   padding: 40px;
-  margin: 200px 0px 300px 200px;
+  margin: 200px 0px 400px 200px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.informe img {
+    border-radius: 20px;
+    margin-left: 110px;
+    box-shadow: 4px 4px 10px rgba(210, 182, 22, 0.8);/*sombra da img*/
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 
 .sobre_img img {
@@ -57,6 +68,7 @@ body {
 .sobre {
   max-width: 600px;       /* Limita a largura do texto */
   color: #D7C48D;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*breno*/
@@ -68,14 +80,33 @@ body {
     grid-area: auto;/*os itens se alinham na horizontal*/
     gap: 15px;/*espaço de 15px entre os itens*/
     flex-wrap: wrap;/*faz que as imagens quebrem linha*/
-    margin-left: 200px;
+    margin-left: 100px;
     color: #D7C48D;
+    margin-bottom: 400px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }/*jessica*/
 
 /*breno*/
+
+.text h2 {
+    font-family: "Glorify", Sans-serif;
+    text-align: center;
+    color: #957b46;
+    margin-bottom: 20px;
+}
+
 .produto1 img {
     width: 255px;
     border-radius: 50%;
+}
+
+.produto1 button {
+    position: relative;
+    top: 170px;
+    right: 175px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #D7C48D;
 }
 
 .produto2 img{
@@ -83,14 +114,41 @@ body {
     border-radius: 50%;
 }
 
+.produto2 button {
+    position: relative;
+    top: 170px;
+    right: 165px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #D7C48D;
+}
+
 .produto3 img {
     width: 255px;
     border-radius: 50%;
 }
 
+.produto3 button {
+    position: relative;
+    top: 170px;
+    right: 170px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #D7C48D;
+}
+
 .produto4 img {
     width: 255px;
     border-radius: 50%;
+}
+
+.produto4 button {
+    position: relative;
+    top: 170px;
+    right: 170px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #D7C48D;
 }
 
 .sobre_img img {
