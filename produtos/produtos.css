@@ -22,6 +22,11 @@ header {
     text-align: center;
 }
 
+.produto1 h3 {
+    position: relative;
+    left: 600px;
+}
+
 .produto p {
     margin: 100px 150px 0px 100px;
 }

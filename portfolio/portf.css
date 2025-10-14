@@ -51,7 +51,7 @@ header {
   flex-wrap: wrap;
   gap: 40px;              /* Espaçamento entre a imagem e o texto */
   padding: 40px;
-  margin: 200px 0px 400px 200px;
+  margin: 100px 0px 100px 200px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
