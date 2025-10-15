@@ -25,18 +25,22 @@ header {
     width: ; /* ou um valor fixo, ex: 80% ou 1200px 
 }*/
 
+.tudo {
+    background-color: antiquewhite;
+}
+
 .navbar-brand img {
     width: 100px;
 }
 
 .apresentacao {
-    margin: 30px;
+    margin: 0px;
 }
 
 .apresentacao {
   position: relative;
   color: #f6e7b9;; /* Ou a cor que contraste bem com a imagem */
-  padding: 200px;/*espaço interno da imagem*/
+  padding: 300px;/*espaço interno da imagem*/
   text-align: center;
 }
 
@@ -105,7 +109,7 @@ header {
     grid-area: auto;/*os itens se alinham na horizontal*/
     /*gap: 15px;*//*espaço de 15px entre os itens*/
     flex-wrap: wrap;/*faz que as imagens quebrem linha*/
-    margin-left: 10px;
+    margin-left: 200px;
     color: #D7C48D;
     margin-bottom: 400px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -123,15 +127,51 @@ header {
 .produto1 img {
     width: 255px;
     border-radius: 50%;
+    margin: 150px 0px;
 }
 
-.produto1 button {
-    position: relative;
-    top: 170px;
+.button {
+    top: 200px;
     right: 200px;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: #D7C48D;
+  padding: 16px 42px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+  line-height: 1.25;
+  background-color: #D7C48D;
+  text-decoration: none;
+  user-select: none;
+color: rgb(64, 64, 64);
+  font-size: 16px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  position: relative;
+  transition: background-color .6s ease;
+  overflow: hidden;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    top: var(--mouse-y);
+    left: var(--mouse-x);
+    transform-style: flat;
+    transform: translate3d(-50%,-50%,0);
+    background: rgba(white,.1);
+    border-radius: 100%;
+    transition: width .3s ease, height .3s ease;
+  }
+  &:focus,
+  &:hover {
+      background: darken(#312827,7%);
+  }
+  &:active {
+    &:after {
+      width: 300px;
+      height: 300px;
+    }
+  }
 }
 
 .produto2 img{
@@ -139,28 +179,10 @@ header {
     border-radius: 50%;
 }
 
-.produto2 button {
-    position: relative;
-    top: 170px;
-    right: 185px;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: #D7C48D;
-}
 
 .produto3 img {
     width: 255px;
     border-radius: 50%;
-}
-
-.produto3 button {
-    position: relative;
-    top: 170px;
-    right: 185px;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: #D7C48D;
-    margin-bottom: 10px;
 }
 
 .produto4 {
@@ -172,18 +194,41 @@ header {
     border-radius: 50%;
 }
 
-.produto4 button {
-    position: relative;
-    top: 170px;
-    right: 185px;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: #D7C48D;
-}
-
 .sobre_img img {
     width: 300px;
 }/*breno*/
+
+/*jessica*/
+footer{
+    background-color: antiquewhite; /*cor de fundo da página*/
+    color: #957b46;/*cor da fonte*/
+    font-weight: bold;/*deixa a fonte em negrito*/
+    font-size: small;
+    text-align: center;/*alinha o texto ao centro*/
+    padding: 5px;/*espaço interno*/
+    bottom: 0;/*faz com que o rodapé fique na parte inferior da página*/
+    width: 100%;/*faz com que o rodapé ocupe 100% da largura da página*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/*define a fonte padrão*/
+}/*jessica*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -199,15 +244,4 @@ header {
     width: 50%;
 }*/
 
-/*jessica*/
-footer{
-    background-color: antiquewhite; /*cor de fundo da página*/
-    color: #957b46;/*cor da fonte*/
-    font-weight: bold;/*deixa a fonte em negrito*/
-    font-size: small;
-    text-align: center;/*alinha o texto ao centro*/
-    padding: 5px;/*espaço interno*/
-    bottom: 0;/*faz com que o rodapé fique na parte inferior da página*/
-    width: 100%;/*faz com que o rodapé ocupe 100% da largura da página*/
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/*define a fonte padrão*/
-}
+
