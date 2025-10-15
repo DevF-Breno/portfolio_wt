@@ -1,13 +1,25 @@
-/*breno*/
-body {
-    background-color: antiquewhite;
+/*Jéssica*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-header {
-    position: sticky;
+/*breno*/
+/*Jéssica*/
+html, body {
+    height: 100%;/*faz com que a página ocupe 100% da tela*/
+    margin: 0%; /*remove a margem padrão*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/*define a fonte padrão*/
+    background-color: white; /*cor de fundo da página*/
+}
+
+header { 
+    width: 100%;/*faz com que o cabeçalho ocupe 100% da largura da página - JÉSSICA*/
+    position: fixed;/*fixa o cabeçalho na parte superior da página - JÉSSICA*/ 
     top: 0;
     z-index: 2;
-}
+    }
 
 /*.navbar {
     width: ; /* ou um valor fixo, ex: 80% ou 1200px 
@@ -76,10 +88,16 @@ header {
   color: #D7C48D;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-/*breno*/
+/*Jéssica - Alteração da cor da fonte do paragrafo em sobré nós*/
+#sobre p{
+    color: rgb(64, 64, 64);
+    font-size: 16px; /*tamanho da fonte*/
+    line-height: 1.6; /*espaçamento entre as linhas*/
+    text-align: justify; /*alinha o texto nas duas margens*/
+}
 
 /*jessica*/
+/*breno*/
 .produtos{
     align-items: center;
     text-align: center;
@@ -180,3 +198,16 @@ header {
 /*#produtos img{
     width: 50%;
 }*/
+
+/*jessica*/
+footer{
+    background-color: antiquewhite; /*cor de fundo da página*/
+    color: #957b46;/*cor da fonte*/
+    font-weight: bold;/*deixa a fonte em negrito*/
+    font-size: small;
+    text-align: center;/*alinha o texto ao centro*/
+    padding: 5px;/*espaço interno*/
+    bottom: 0;/*faz com que o rodapé fique na parte inferior da página*/
+    width: 100%;/*faz com que o rodapé ocupe 100% da largura da página*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/*define a fonte padrão*/
+}
