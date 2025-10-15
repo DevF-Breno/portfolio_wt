@@ -2,6 +2,12 @@ body {
     background-color: antiquewhite;
 }
 
+header {
+    position: sticky;/*fazz que o header grude na tela*/
+    top: 0;
+    z-index: 3;
+}
+
 .navbar-brand img {
     width: 100px;
 }
@@ -16,6 +22,11 @@ body {
     text-align: center;
 }
 
+.produto1 h3 {
+    position: relative;
+    left: 600px;
+}
+
 .produto p {
     margin: 100px 150px 0px 100px;
 }
@@ -24,4 +35,12 @@ body {
     margin: 0px 0px 0px 100px;
     border-radius: 15px;
     width: 400px;
+}
+
+.descricao ul {
+    margin: 30px 100px 0px 90px;
+}
+
+.mduso p {
+    margin: 0px 0px px 90px;
 }
