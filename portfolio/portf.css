@@ -27,8 +27,13 @@ header {
 
 .tudo {
     background-color: antiquewhite;
+    color: rgb(64, 64, 64);
 }
-
+.inst img{
+    width: 30px;
+    padding: 0px;
+    align-items: center;
+}
 .navbar-brand img {
     width: 100px;
 }
@@ -91,6 +96,11 @@ header {
   max-width: 600px;       /* Limita a largura do texto */
   color: #D7C48D;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sobre h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #957b46;
 }
 /*Jéssica - Alteração da cor da fonte do paragrafo em sobré nós*/
 #sobre p{
