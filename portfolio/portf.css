@@ -47,21 +47,6 @@ header {
     width: 100px;
 }
 
-
-/*Jéssica-BRENO VERIFICAR*/
-.apresentacao img {
-    width: 100%;
-    /*faz com que a imagem ocupe 100% da largura da tela*/
-    margin: top: 20px;
-    /*espaço em cima da imagem*/
-    height: auto;
-    /*mantém a proporção da imagem*/
-    display: flex;
-    /*faz com que a imagem se ajuste ao tamanho da tela*/
-    object-position: center;
-    /*faz com que a imagem ocupe todo o espaço disponível, cortando o que ultrapassar*/
-}
-
 .apresentacao {
     position: relative;
     color: #f6e7b9;
