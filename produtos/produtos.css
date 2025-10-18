@@ -19,7 +19,9 @@ header {
     background-color: antiquewhite;
     color: rgb(64, 64, 64);
 }
-
+.produto{
+    margin-bottom: 207px;
+}
 .produto h1 {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -47,4 +49,23 @@ header {
 
 .mduso p {
     margin: 0px 0px px 90px;
+}
+footer {
+    background-color: antiquewhite;
+    /*cor de fundo da página*/
+    color: #957b46;
+    /*cor da fonte*/
+    font-weight: bold;
+    /*deixa a fonte em negrito*/
+    font-size: small;
+    text-align: center;
+    /*alinha o texto ao centro*/
+    padding: 5px;
+    /*espaço interno*/
+    bottom: 0;
+    /*faz com que o rodapé fique na parte inferior da página*/
+    width: 100%;
+    /*faz com que o rodapé ocupe 100% da largura da página*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*define a fonte padrão*/
 }

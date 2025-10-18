@@ -303,7 +303,7 @@ footer {
     /*deixa a fonte em negrito*/
     font-size: small;
     text-align: center;
-    /*alinha o texto ao centro*/
+    /*alinha o texto ao centro*/;
     padding: 5px;
     /*espaço interno*/
     bottom: 0;
