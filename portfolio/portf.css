@@ -137,6 +137,35 @@ header {
     /*alinha o texto nas duas margens*/
 }
 
+
+.categoria {
+    position: relative;
+    display: flex;
+    gap: 100px;
+    padding-left: 70px;
+    align-items: center;
+}
+
+.tratamento img {
+    width: 250px;
+}
+
+.serum img {
+    width: 245px;
+}
+
+.descolorantes img {
+    width: 210px;
+}
+
+.produtosn img {
+    width: 220px;
+}
+
+
+
+
+
 /*jessica*/
 /*breno*/
 .produtos {
