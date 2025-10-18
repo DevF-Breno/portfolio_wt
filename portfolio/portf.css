@@ -101,16 +101,17 @@ header {
 }
 
 .sobre_img img {
-    max-width: 100%;
+    margin: 0px 0px 0px 350px;
+    width: 400px;
     /*faz com que a imagem ocupe 100% da largura da tela*/
     height: auto;
     /*mantém a proporção da imagem*/
-    display: block;
     object-fit: contain;
 
 }
 
 .sobre {
+    align-items: center;
     max-width: 600px;
     /* Limita a largura do texto */
     color: #D7C48D;
@@ -120,14 +121,15 @@ header {
 
 .sobre h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: #957b46;
 }
 
 /*Jéssica - Alteração da cor da fonte do paragrafo em sobré nós*/
 #sobre p {
+    margin-left: 40px;
     color: rgb(64, 64, 64);
-    font-size: 16px;
+    font-size: 20px;
     /*tamanho da fonte*/
     line-height: 1.6;
     /*espaçamento entre as linhas*/
@@ -146,7 +148,7 @@ header {
     /*espaço de 15px entre os itens*/
     flex-wrap: wrap;
     /*faz que as imagens quebrem linha*/
-    margin-left: 10px;
+    margin-left: 275px;
     color: #D7C48D;
     margin-bottom: 400px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -162,11 +164,6 @@ header {
     text-align: center;
     color: #957b46;
     margin-bottom: 20px;
-}
-
-.produtos {
-    margin-left: 10px;
-    align-items: center;
 }
 
 .produto1 img {
