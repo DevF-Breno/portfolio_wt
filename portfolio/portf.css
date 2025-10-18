@@ -142,16 +142,15 @@ header {
     text-align: center;
     display: flex;
     /*faz que os itens filhos se tornem flexiveis*/
-    grid-area: auto;
-    /*os itens se alinham na horizontal*/
-    /*gap: 15px;*/
+    gap: 5px;
     /*espaço de 15px entre os itens*/
     flex-wrap: wrap;
     /*faz que as imagens quebrem linha*/
-    margin-left: 200px;
+    margin-left: 10px;
     color: #D7C48D;
     margin-bottom: 400px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 /*jessica*/
@@ -168,13 +167,13 @@ header {
 .produto1 img {
     width: 255px;
     border-radius: 50%;
-    margin: 150px 0px;
+    margin: 150px 0px 150px 70px ;
 }
 
 .button {
     top: 200px;
     right: 200px;
-    padding: 16px 42px;
+    padding: 16px 42px 16px 42px ;
     border-radius: 3px;
     box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
     line-height: 1.25;
@@ -230,7 +229,7 @@ header {
 }
 
 .produto4 {
-    margin-right: 0px;
+    margin: 0px;
 }
 
 .produto4 img {
