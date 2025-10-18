@@ -164,10 +164,17 @@ header {
     margin-bottom: 20px;
 }
 
+.produtos {
+    margin-left: 10px;
+    align-items: center;
+}
+
 .produto1 img {
+    position: relative;
+    left: 60px;
     width: 255px;
     border-radius: 50%;
-    margin: 150px 0px 150px 70px ;
+    margin: 150px 0px 150px 60px ;
 }
 
 .button {
@@ -218,24 +225,67 @@ header {
 }
 
 .produto2 img {
+    position: relative;
+    left: 45px;
     width: 255px;
     border-radius: 50%;
 }
 
 
 .produto3 img {
+     position: relative;
     width: 255px;
     border-radius: 50%;
 }
 
-.produto4 {
+.produto1 {
     margin: 0px;
 }
 
+.produto4 {
+    position: relative;
+    left: 50px;
+}
+
 .produto4 img {
+     position: relative;
+    left: 60px;
     width: 255px;
     border-radius: 50%;
 }
+ 
+.produto5 {
+    position: relative;
+    left: 90px;
+}
+
+.produto5 img {
+    position: relative;
+    left: 80px;
+    width: 255px;
+    border-radius: 50%;
+}
+
+.produto5 a {
+    margin: 0px 0px 0px 50px;
+}
+
+.produto6 {
+    position: relative;
+    left: 50px;
+}
+
+.produto6 img {
+    position: relative;
+    left: 90px;
+    width: 255px;
+    border-radius: 50%;
+}
+
+.produto6 a {
+    margin: 0px 0px 0px 70px;
+}
+
 
 .sobre_img img {
     width: 300px;
