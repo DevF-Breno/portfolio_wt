@@ -1,6 +1,7 @@
 /*Jéssica*/
 * {
     box-sizing: border-box;
+    max-width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -17,6 +18,8 @@ body {
     /*define a fonte padrão*/
     background-color: white;
     /*cor de fundo da página*/
+    overflow-y: hidden;
+    overflow-y: auto;
 }
 
 header {
@@ -101,7 +104,7 @@ header {
 }
 
 .sobre_img img {
-    margin: 0px 0px 0px 350px;
+    margin: 0px 0px 0px 150px;
     width: 400px;
     /*faz com que a imagem ocupe 100% da largura da tela*/
     height: auto;
@@ -112,7 +115,7 @@ header {
 
 .sobre {
     align-items: center;
-    max-width: 600px;
+    max-width: 400px;
     /* Limita a largura do texto */
     color: #D7C48D;
     /*cor da fonte*/
@@ -127,9 +130,9 @@ header {
 
 /*Jéssica - Alteração da cor da fonte do paragrafo em sobré nós*/
 #sobre p {
-    margin-left: 40px;
+    margin-left: 20px;
     color: rgb(64, 64, 64);
-    font-size: 20px;
+    font-size: 1rem;
     /*tamanho da fonte*/
     line-height: 1.6;
     /*espaçamento entre as linhas*/
@@ -141,13 +144,14 @@ header {
 .categoria {
     position: relative;
     display: flex;
-    gap: 100px;
-    padding-left: 70px;
+    gap: 90px;
+    
     align-items: center;
+    padding-top: 50px;
 }
 
 .tratamento img {
-    width: 250px;
+    width: 220px;
 }
 
 .serum img {
@@ -155,39 +159,35 @@ header {
 }
 
 .descolorantes img {
-    width: 210px;
+    width: 250px;
 }
 
 .produtosn img {
-    width: 220px;
+    width: 250px;
 }
-
-
-
-
 
 /*jessica*/
 /*breno*/
-.produtos {
+.lancamentos {
+    position: relative;
+    left: 10px;
     align-items: center;
-    text-align: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));/*grade responsiva*/
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
     /*faz que os itens filhos se tornem flexiveis*/
-    gap: 5px;
     /*espaço de 15px entre os itens*/
     flex-wrap: wrap;
     /*faz que as imagens quebrem linha*/
-    margin-left: 275px;
     color: #D7C48D;
-    margin-bottom: 400px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
 }
 
 /*jessica*/
 
 /*breno*/
-
 .text h2 {
     font-family: "Glorify", Sans-serif;
     text-align: center;
@@ -195,121 +195,12 @@ header {
     margin-bottom: 20px;
 }
 
-.produto1 img {
-    position: relative;
-    left: 60px;
-    width: 255px;
-    border-radius: 50%;
-    margin: 150px 0px 150px 60px ;
-}
-
-.button {
-    top: 200px;
-    right: 200px;
-    padding: 16px 42px 16px 42px ;
-    border-radius: 3px;
-    box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
-    line-height: 1.25;
-    background-color: #D7C48D;
-    text-decoration: none;
-    user-select: none;
-    color: rgb(64, 64, 64);
-    font-size: 16px;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-    position: relative;
-    transition: background-color .6s ease;
-    overflow: hidden;
-
-    &:after {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 0;
-        top: 50%;
-        left: 50%;
-        top: var(--mouse-y);
-        left: var(--mouse-x);
-        transform-style: flat;
-        transform: translate3d(-50%, -50%, 0);
-        background: rgba(white, .1);
-        border-radius: 100%;
-        transition: width .3s ease, height .3s ease;
-    }
-
-    &:focus,
-    &:hover {
-        background: darken(#312827, 7%);
-    }
-
-    &:active {
-        &:after {
-            width: 300px;
-            height: 300px;
-        }
-    }
-}
-
-.produto2 img {
-    position: relative;
-    left: 45px;
-    width: 255px;
-    border-radius: 50%;
-}
-
-
-.produto3 img {
-     position: relative;
-    width: 255px;
-    border-radius: 50%;
-}
-
-.produto1 {
-    margin: 0px;
-}
-
-.produto4 {
-    position: relative;
-    left: 50px;
-}
-
-.produto4 img {
-     position: relative;
-    left: 60px;
-    width: 255px;
-    border-radius: 50%;
-}
- 
-.produto5 {
-    position: relative;
-    left: 90px;
-}
-
-.produto5 img {
-    position: relative;
-    left: 80px;
-    width: 255px;
-    border-radius: 50%;
-}
-
-.produto5 a {
-    margin: 0px 0px 0px 50px;
-}
-
-.produto6 {
-    position: relative;
-    left: 50px;
-}
-
-.produto6 img {
-    position: relative;
-    left: 90px;
-    width: 255px;
-    border-radius: 50%;
-}
-
-.produto6 a {
-    margin: 0px 0px 0px 70px;
+.lancamentos img {
+    align-items: center;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 
