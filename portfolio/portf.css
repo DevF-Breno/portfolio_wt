@@ -18,8 +18,11 @@ body {
     /*define a fonte padrão*/
     background-color: white;
     /*cor de fundo da página*/
-    overflow-y: hidden;
-    overflow-y: auto;
+    overflow-x: hidden;/*remove a barra de rolagem horizontal*/
+    overflow-y: scroll;/*remove a barra de rolagem vertical*/
+    scrollbar-width: none;/*oculta a barra de rolagem no firefox*/
+    scroll-behavior: smooth;/*adiciona um efeito de rolagem suave*/
+       
 }
 
 header {
@@ -29,6 +32,26 @@ header {
     /*fixa o cabeçalho na parte superior da página - JÉSSICA*/
     top: 0;
     z-index: 2;
+}
+.navbar {
+  font-family: 'Poppins', sans-serif;/*define a fonte padrão*/
+  font-weight: 300;/*define a espessura da fonte*/
+  letter-spacing: 0.5px;/*espaçamento entre as letras*/
+}
+
+.nav-link {
+  color: #7c7c7c;/* cor cinza padrão */
+  padding: 0 15px;/* espaçamento horizontal */
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #c7a45d; /* tom dourado */
+  
+}
+
+.navbar-brand img {
+  max-height: 70px;
 }
 
 /*.navbar {
@@ -40,10 +63,14 @@ header {
     color: rgb(64, 64, 64);
 }
 
-.inst img {
-    width: 30px;
-    padding: 0px;
-    align-items: center;
+.redes {
+    display: flex;/* Coloca os filhos lado a lado */
+    width: 100px;/*define a largura do container das redes sociais*/
+    gap: 15px;/*espaçamento entre os ícones*/
+    margin-right: 25px;/*distância da direita*/
+    top: 15px;/*distância do topo*/
+    position: relative;/*posiciona o container relativo ao seu local original*/
+    
 }
 
 .navbar-brand img {
@@ -144,10 +171,11 @@ header {
 .categoria {
     position: relative;
     display: flex;
-    gap: 90px;
-    
+    gap: 70px;
+    flex-wrap: wrap;/*faz que as imagens quebrem linha*/
     align-items: center;
     padding-top: 50px;
+    margin-left: 50px;
 }
 
 .tratamento img {
@@ -170,13 +198,14 @@ header {
 /*breno*/
 .lancamentos {
     position: relative;
-    left: 10px;
+    left: 150px;
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));/*grade responsiva*/
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /*grade responsiva*/
+    gap: 5px;
     justify-content: center;
-    padding: 40px;
+    padding: 20px;
     /*faz que os itens filhos se tornem flexiveis*/
     /*espaço de 15px entre os itens*/
     flex-wrap: wrap;
@@ -197,7 +226,8 @@ header {
 
 .lancamentos img {
     align-items: center;
-    width: 80%;
+    
+    width: 50%;
     height: auto;
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
@@ -220,7 +250,8 @@ footer {
     /*deixa a fonte em negrito*/
     font-size: small;
     text-align: center;
-    /*alinha o texto ao centro*/;
+    /*alinha o texto ao centro*/
+    ;
     padding: 5px;
     /*espaço interno*/
     bottom: 0;
