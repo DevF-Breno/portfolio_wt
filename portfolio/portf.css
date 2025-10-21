@@ -47,7 +47,11 @@ header {
 .nav-link:hover,
 .nav-link:active {
   color: #c7a45d; /* tom dourado */
-  
+} 
+.nav-link:hover {
+  transform:matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1); /* efeito de zoom ao passar o mouse */
+    transition: transform 0.3s ease; /* suaviza a transição do efeito */
+    font-weight: bold;
 }
 
 .navbar-brand img {
@@ -176,6 +180,18 @@ header {
     align-items: center;
     padding-top: 50px;
     margin-left: 50px;
+}
+.categoria a{
+    text-decoration: none; /*remove o sublinhado dos links*/
+    color: rgb(64, 64, 64); /*cor da fonte*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold; /*deixa a fonte em negrito*/
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+.categoria a:hover{
+    color: #c7a45d; /*tom dourado ao passar o mouse*/
 }
 
 .tratamento img {
