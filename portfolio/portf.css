@@ -229,8 +229,17 @@ header {
     width: 250px;
 }
 
+.video video {
+    position: relative;
+    left: 615px;
+    width: 300px;
+}
+
+
+
 /*jessica*/
 /*breno*/
+
 .lancamentos {
     position: relative;
     left: 200px;
