@@ -56,6 +56,13 @@ header {
 
 .navbar-brand img {
   max-height: 70px;
+  position: relative;
+}
+
+.redes img {
+    position: relative;
+    bottom: 15px;
+    gap: 10px;
 }
 
 /*.navbar {
@@ -111,6 +118,10 @@ header {
     /* texto na frente */
 }
 
+.apresentacao p {
+    font-size: 20px;
+}
+
 .informe {
     display: flex;
     /* Coloca os filhos lado a lado */
@@ -155,15 +166,19 @@ header {
 
 .sobre h1 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: #957b46;
+    position: relative;
+    bottom: 20px;
 }
 
 /*Jéssica - Alteração da cor da fonte do paragrafo em sobré nós*/
 #sobre p {
-    margin-left: 20px;
+    position: relative;
+    bottom: 20px;
+    margin-left: 10px;
     color: rgb(64, 64, 64);
-    font-size: 1rem;
+    font-size: 110%;
     /*tamanho da fonte*/
     line-height: 1.6;
     /*espaçamento entre as linhas*/
@@ -179,7 +194,7 @@ header {
     flex-wrap: wrap;/*faz que as imagens quebrem linha*/
     align-items: center;
     padding-top: 50px;
-    margin-left: 50px;
+    margin-left: 180px;
 }
 .categoria a{
     text-decoration: none; /*remove o sublinhado dos links*/
@@ -189,17 +204,21 @@ header {
     text-align: center;
     display: block;
     margin-top: 10px;
+    font-size: 20px;
 }
 .categoria a:hover{
     color: #c7a45d; /*tom dourado ao passar o mouse*/
+    transform:matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1); /* efeito de zoom ao passar o mouse */
+    transition: transform 0.3s ease; /* suaviza a transição do efeito */
+    font-weight: bold;
 }
 
 .tratamento img {
-    width: 220px;
+    width: 254px;
 }
 
 .serum img {
-    width: 245px;
+    width: 250px;
 }
 
 .descolorantes img {
@@ -210,16 +229,24 @@ header {
     width: 250px;
 }
 
+.video video {
+    position: relative;
+    left: 615px;
+    width: 300px;
+}
+
+
+
 /*jessica*/
 /*breno*/
+
 .lancamentos {
     position: relative;
-    left: 150px;
+    left: 200px;
     align-items: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     /*grade responsiva*/
-    gap: 5px;
     justify-content: center;
     padding: 20px;
     /*faz que os itens filhos se tornem flexiveis*/
@@ -227,7 +254,6 @@ header {
     flex-wrap: wrap;
     /*faz que as imagens quebrem linha*/
     color: #D7C48D;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*jessica*/
@@ -242,8 +268,7 @@ header {
 
 .lancamentos img {
     align-items: center;
-    
-    width: 50%;
+    width: 40%;
     height: auto;
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
@@ -283,11 +308,45 @@ footer {
 
 
 
+.local {
+    margin: 50px 0px 50px 0px;
+}
+
+.local h2 {
+    color: #957b46;
+    text-align: center;
+    font-family: "Glorify", Sans-serif;
+}
 
 
+.local ul {
+    position: relative;
+    left: 555px;
+}
 
+.contato {
+    margin: 50px 0px 50px 0px;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+}
 
+.contato a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #7c7c7c;
 
+}
+
+.contato a:hover {
+    color: #c7a45d;
+}
+
+.contato img {
+    position: relative;
+    bottom: 15px;
+    width: 50px;
+}
 
 
 
