@@ -179,7 +179,7 @@ header {
     flex-wrap: wrap;/*faz que as imagens quebrem linha*/
     align-items: center;
     padding-top: 50px;
-    margin-left: 50px;
+    margin-left: 180px;
 }
 .categoria a{
     text-decoration: none; /*remove o sublinhado dos links*/
