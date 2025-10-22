@@ -208,14 +208,17 @@ header {
 }
 .categoria a:hover{
     color: #c7a45d; /*tom dourado ao passar o mouse*/
+    transform:matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1); /* efeito de zoom ao passar o mouse */
+    transition: transform 0.3s ease; /* suaviza a transição do efeito */
+    font-weight: bold;
 }
 
 .tratamento img {
-    width: 220px;
+    width: 254px;
 }
 
 .serum img {
-    width: 245px;
+    width: 250px;
 }
 
 .descolorantes img {
