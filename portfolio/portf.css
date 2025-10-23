@@ -18,11 +18,15 @@ body {
     /*define a fonte padrão*/
     background-color: white;
     /*cor de fundo da página*/
-    overflow-x: hidden;/*remove a barra de rolagem horizontal*/
-    overflow-y: scroll;/*remove a barra de rolagem vertical*/
-    scrollbar-width: none;/*oculta a barra de rolagem no firefox*/
-    scroll-behavior: smooth;/*adiciona um efeito de rolagem suave*/
-       
+    overflow-x: hidden;
+    /*remove a barra de rolagem horizontal*/
+    overflow-y: scroll;
+    /*remove a barra de rolagem vertical*/
+    scrollbar-width: none;
+    /*oculta a barra de rolagem no firefox*/
+    scroll-behavior: smooth;
+    /*adiciona um efeito de rolagem suave*/
+
 }
 
 header {
@@ -33,36 +37,58 @@ header {
     top: 0;
     z-index: 2;
 }
+
 .navbar {
-  font-family: 'Poppins', sans-serif;/*define a fonte padrão*/
-  font-weight: 300;/*define a espessura da fonte*/
-  letter-spacing: 0.5px;/*espaçamento entre as letras*/
+    font-family: 'Poppins', sans-serif;
+    /*define a fonte padrão*/
+    font-weight: 300;
+    /*define a espessura da fonte*/
+    letter-spacing: 0.5px;
+    /*espaçamento entre as letras*/
 }
 
 .nav-link {
-  color: #7c7c7c;/* cor cinza padrão */
-  padding: 0 15px;/* espaçamento horizontal */
+    color: #7c7c7c;
+    /* cor cinza padrão */
+    padding: 0 15px;
+    /* espaçamento horizontal */
 }
 
 .nav-link:hover,
 .nav-link:active {
-  color: #c7a45d; /* tom dourado */
-} 
+    color: #c7a45d;
+    /* tom dourado */
+}
+
 .nav-link:hover {
-  transform:matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1); /* efeito de zoom ao passar o mouse */
-    transition: transform 0.3s ease; /* suaviza a transição do efeito */
+    transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1);
+    /* efeito de zoom ao passar o mouse */
+    transition: transform 0.3s ease;
+    /* suaviza a transição do efeito */
     font-weight: bold;
 }
 
 .navbar-brand img {
-  max-height: 70px;
-  position: relative;
+    max-height: 100px;
+    /*define a altura máxima da logo*/
+    position: relative;
+    /*posiciona a logo*/
+    top: 5px;
+    /*distância do topo*/
+    width: 100px;
 }
 
 .redes img {
-    position: relative;
-    bottom: 15px;
-    gap: 10px;
+    position: relative;/*posiciona os ícones das redes sociais*/
+    bottom: 15px;/*distância da parte inferior*/
+    gap: 10px;/*espaçamento entre os ícones*/
+}
+
+.redes a:hover {
+    transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1);
+    /* efeito de zoom ao passar o mouse */
+    transition: transform 0.3s ease;
+    /* suaviza a transição do efeito */
 }
 
 /*.navbar {
@@ -75,17 +101,18 @@ header {
 }
 
 .redes {
-    display: flex;/* Coloca os filhos lado a lado */
-    width: 100px;/*define a largura do container das redes sociais*/
-    gap: 15px;/*espaçamento entre os ícones*/
-    margin-right: 25px;/*distância da direita*/
-    top: 15px;/*distância do topo*/
-    position: relative;/*posiciona o container relativo ao seu local original*/
-    
-}
-
-.navbar-brand img {
+    display: flex;
+    /* Coloca os filhos lado a lado */
     width: 100px;
+    /*define a largura do container das redes sociais*/
+    gap: 15px;
+    /*espaçamento entre os ícones*/
+    margin-right: 25px;
+    /*distância da direita*/
+    top: 15px;
+    /*distância do topo*/
+    position: relative;
+    /*posiciona o container relativo ao seu local original*/
 }
 
 .apresentacao {
@@ -189,25 +216,34 @@ header {
     position: relative;
     display: flex;
     gap: 70px;
-    flex-wrap: wrap;/*faz que as imagens quebrem linha*/
+    flex-wrap: wrap;
+    /*faz que as imagens quebrem linha*/
     align-items: center;
     padding-top: 50px;
     margin-left: 180px;
 }
-.categoria a{
-    text-decoration: none; /*remove o sublinhado dos links*/
-    color: rgb(64, 64, 64); /*cor da fonte*/
+
+.categoria a {
+    text-decoration: none;
+    /*remove o sublinhado dos links*/
+    color: rgb(64, 64, 64);
+    /*cor da fonte*/
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold; /*deixa a fonte em negrito*/
+    font-weight: bold;
+    /*deixa a fonte em negrito*/
     text-align: center;
     display: block;
     margin-top: 10px;
     font-size: 20px;
 }
-.categoria a:hover{
-    color: #c7a45d; /*tom dourado ao passar o mouse*/
-    transform:matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1); /* efeito de zoom ao passar o mouse */
-    transition: transform 0.3s ease; /* suaviza a transição do efeito */
+
+.categoria a:hover {
+    color: #c7a45d;
+    /*tom dourado ao passar o mouse*/
+    transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1);
+    /* efeito de zoom ao passar o mouse */
+    transition: transform 0.3s ease;
+    /* suaviza a transição do efeito */
     font-weight: bold;
 }
 
@@ -227,7 +263,7 @@ header {
     width: 250px;
 }
 
-.info {
+.lanc   {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -242,13 +278,13 @@ header {
     border-radius: 8px;
 }
 
-.lanc h1 {
-    margin-bottom: 30px;
+.lanc h2{
     text-align: center;
     flex-wrap: wrap;
 }
+    
 
-.text p {
+.lanc p{
     position: relative;
     left: 100px;
 }
