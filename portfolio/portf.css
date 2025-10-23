@@ -227,42 +227,30 @@ header {
     width: 250px;
 }
 
-.lanc   {
+.info {
     display: flex;
-    align-items: center;
-    max-width: 400px;
-    /* Limita a largura do texto */
-    color: #D7C48D;
-    /*cor da fonte*/
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.lanc h2{
-    text-align: center;
-    margin-bottom: 20px;
-    color: #957b46;
-    position: relative;
-    bottom: 20px;
-}
-    
-
-.lanc p{
-    position: relative;
-    bottom: 20px;
-    margin-left: 10px;
-    color: rgb(64, 64, 64);
-    font-size: 110%;
-    /*tamanho da fonte*/
-    line-height: 1.6;
-    /*espaçamento entre as linhas*/
-    text-align: justify;
-    /*alinha o texto nas duas margens*/
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .video video {
+    max-width: 100%;
+    width: 400px;
+    border-radius: 8px;
+}
+
+.lanc h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.text p {
     position: relative;
-    left: 615px;
-    width: 300px;
+    left: 100px;
 }
 
 
@@ -334,25 +322,6 @@ footer {
 }
 
 /*jessica*/
-
-
-
-
-.local {
-    margin: 50px 0px 50px 0px;
-}
-
-.local h2 {
-    color: #957b46;
-    text-align: center;
-    font-family: "Glorify", Sans-serif;
-}
-
-
-.local ul {
-    position: relative;
-    left: 555px;
-}
 
 .contato {
     margin: 50px 0px 50px 0px;
