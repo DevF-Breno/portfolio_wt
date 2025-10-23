@@ -69,14 +69,19 @@ header {
 }
 
 .navbar-brand img {
-    max-height: 70px;
+    max-height: 100px;
+    /*define a altura máxima da logo*/
     position: relative;
+    /*posiciona a logo*/
+    top: 5px;
+    /*distância do topo*/
+    width: 100px;
 }
 
 .redes img {
-    position: relative;
-    bottom: 15px;
-    gap: 10px;
+    position: relative;/*posiciona os ícones das redes sociais*/
+    bottom: 15px;/*distância da parte inferior*/
+    gap: 10px;/*espaçamento entre os ícones*/
 }
 
 .redes a:hover {
@@ -108,10 +113,6 @@ header {
     /*distância do topo*/
     position: relative;
     /*posiciona o container relativo ao seu local original*/
-}
-
-.navbar-brand img {
-    width: 100px;
 }
 
 .apresentacao {
@@ -262,7 +263,7 @@ header {
     width: 250px;
 }
 
-.lanc   {
+.lanc {
     display: flex;
     align-items: center;
     max-width: 400px;
@@ -272,16 +273,16 @@ header {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.lanc h2{
+.lanc h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #957b46;
     position: relative;
     bottom: 20px;
 }
-    
 
-.lanc p{
+
+.lanc p {
     position: relative;
     bottom: 20px;
     margin-left: 10px;
