@@ -161,7 +161,8 @@ header {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.informe img {
+.informe img,
+.sobre_img img {
     border-radius: 20px;
     margin-left: 110px;
     box-shadow: 4px 4px 10px rgba(210, 182, 22, 0.8);
@@ -169,17 +170,15 @@ header {
     position: relative;
     width: 100%;
     height: auto;
-}
-
-.sobre_img img {
     margin: 0px 0px 0px 150px;
-    width: 400px;
+    /*width: 400px;*/
     /*faz com que a imagem ocupe 100% da largura da tela*/
-    height: auto;
+    /*height: auto;*/
     /*mantém a proporção da imagem*/
     object-fit: contain;
-
 }
+
+
 
 .sobre {
     align-items: center;
@@ -211,7 +210,6 @@ header {
     text-align: justify;
     /*alinha o texto nas duas margens*/
 }
-
 
 .categoria {
     position: relative;
@@ -262,6 +260,38 @@ header {
 
 .produtosn img {
     width: 250px;
+}
+
+.lanc   {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    /* Limita a largura do texto */
+    color: #D7C48D;
+    /*cor da fonte*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lanc h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #957b46;
+    position: relative;
+    bottom: 20px;
+}
+    
+
+.lanc p{
+    position: relative;
+    bottom: 20px;
+    margin-left: 10px;
+    color: rgb(64, 64, 64);
+    font-size: 110%;
+    /*tamanho da fonte*/
+    line-height: 1.6;
+    /*espaçamento entre as linhas*/
+    text-align: justify;
+    /*alinha o texto nas duas margens*/
 }
 
 .video video {
