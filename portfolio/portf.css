@@ -272,10 +272,26 @@ header {
     margin-top: 20px;
 }
 
+.video {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
 .video video {
+    position: relative;
     max-width: 100%;
     width: 400px;
     border-radius: 8px;
+    left: 100px;
+}
+
+.video p {
+    position: relative;
+    top: 200px;
+    margin-left: 100px;
+    margin-right: 50px;
 }
 
 .lanc h2{
