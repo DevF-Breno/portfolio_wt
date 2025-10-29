@@ -11,3 +11,6 @@ function openTab(event, tabName) {
      // Adiciona a classe 'active' ao botão clicado
      event.currentTarget.classList.add('active');
     }
+
+
+    
