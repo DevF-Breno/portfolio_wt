@@ -218,6 +218,16 @@ section.produtos-tratamento {
     display: inline-block;
     /*exibe o botão ativo como bloco inline*/
 }
+.whatsapp-button-container{
+    display: block;
+}
+
+/* Ajuste a cor de hover da aba para um tom mais suave se quiser */
+.tab-button:hover {
+    background-color: #ddd;
+    /* Se você quiser um hover que combine: background-color: #eadfc9; */
+    display: inline-block;
+}
 
 /* Estilo do conteúdo das abas */
 .tab-content {
@@ -229,6 +239,7 @@ section.produtos-tratamento {
     /*remove a borda superior*/
     background-color: #fff;
     /*cor de fundo do conteúdo*/
+    text-align: left;
 }
 
 /* Exibe o conteúdo ativo */
