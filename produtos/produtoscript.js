@@ -1,7 +1,7 @@
 function openTab(event, tabName) {
     // Esconde todo o conteúdo das abas
     const tabContents = document.querySelectorAll('.tab-content');
-    tabContents.forEach(tab => tab.classList.remove('active'));
+    tabContents.forEach(tab => tab.classList.remove('active')); 
 
     // Remove a classe 'active' de todos os botões
     const tabButtons = document.querySelectorAll('.tab-button');

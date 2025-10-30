@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WT cosmetics Hair</title>
+    <title>WT Tratamento Profissional</title>
     <link rel="stylesheet" href="../produtos/produtos.css">
     <link rel="shortcut icon" href="../imagens/logowt-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
@@ -16,24 +16,25 @@
         <div class="tudo">
             <nav class="navbar navbar-expand-lg mx-auto">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="../imagens/logowt-removebg-preview.png" alt="logo">
+                    <a class="navbar-brand" href="../portfolio/index.html">
+                        <img src="../imagens/logowt-removebg-preview.png" alt="logo" class="logo" style="height: 50px;">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="../portfolio/index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#sobre">Sobre nós</a>
+                                <a class="nav-link" href="../portfolio/index.html#sobre">Sobre nós</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="../portfolio/index.html#categoria">
                                     Produtos
                                 </a>
                             </li>
@@ -45,6 +46,7 @@
                 </div>
             </nav>
         </div>
+
     </header>
 
 
@@ -56,6 +58,13 @@
                 <div class="produto-item">
                     <img src="../imagens/Tratamentos profissionais/Trat_Potenza Rosa.png" alt="Potenza Rosa">
                     <h3>Potenza Rosa Straight Treatment</h3>
+                    <!--Botão de comprar pelo whatsApp-->
+                    <div class="whatsapp-button-container">
+                        <a href="https://api.whatsapp.com/send/?phone=5585987550274&text=Ol%C3%A1%2C+gostaria+de+comprar+o+produto%3A+Potenza+Rosa+Straight+Treatment.+Poderia+me+ajudar%3F&type=phone_number&app_absent=0"
+                            target="_blank" class="whatsapp-button btn btn-success">
+                            COMPRAR PELO WHATSAPP
+                        </a>
+                    </div>
                     <div class="tabs-container">
                         <!-- botões das abas -->
                         <div class="tab-buttons">
@@ -161,183 +170,230 @@
                 <div class="produto-item">
                     <img src="../imagens/Tratamentos profissionais/Trat_Potenza Laranja.png" alt="Potenza Laranja">
                     <h3>Potenza Laranja Reconstrutivo</h3>
-                    <div class="tabs-container">
-                        <!-- botões das abas -->
-                        <div class="botao-aba">
-                            <button class="tab-button active" onclick="openTab(event, 'descrição2')">Descrição</button>
-                            <button class="tab-button" onclick="openTab(event, 'ingredientes2')">Ingredientes</button>
-                            <button class="tab-button" onclick="openTab(event, 'modoDeUso2')">Modo de uso</button>
-                        </div>
-                        <div id="descrição2" class="tab-content active">
+                    <!--Botão comprar pelo WhatsApp-->
+                    <div class="whatsapp-button-container">
+                        <a href="https://api.whatsapp.com/send/?phone=5585987550274&text=Ol%C3%A1%2C+gostaria+de+comprar+o+produto%3A+Potenza+Laranja+Reconstrutivo.+Poderia+me+ajudar%3F&type=phone_number&app_absent=0"
+                            target="_blank" class="whatsapp-button btn btn-success">
+                            COMPRAR PELO WHATSAPP
+                        </a>
 
-                            <p>Revitalize seus cabelos com o kit Potenza Reconstrutivo Laranja, uma linha especialmente
-                                formulada para restaurar a saúde e a vitalidade dos fios danificados. Desenvolvido pela
-                                WT Cosmetic Hair, este tratamento profissional combina ingredientes poderosos para
-                                reconstruir a fibra capilar, proporcionando força, brilho e maciez incomparáveis.
-                            </p>
+                        <div class="tabs-container">
+                            <!-- botões das abas -->
+                            <div class="botao-aba">
+                                <button class="tab-button active"
+                                    onclick="openTab(event, 'descrição2')">Descrição</button>
+                                <button class="tab-button"
+                                    onclick="openTab(event, 'ingredientes2')">Ingredientes</button>
+                                <button class="tab-button" onclick="openTab(event, 'modoDeUso2')">Modo de uso</button>
+                            </div>
+                            <div id="descrição2" class="tab-content active">
 
-                        </div>
-                        <div id="ingredientes2" class="tab-content">
+                                <p>Revitalize seus cabelos com o kit Potenza Reconstrutivo Laranja, uma linha
+                                    especialmente
+                                    formulada para restaurar a saúde e a vitalidade dos fios danificados. Desenvolvido
+                                    pela
+                                    WT Cosmetic Hair, este tratamento profissional combina ingredientes poderosos para
+                                    reconstruir a fibra capilar, proporcionando força, brilho e maciez incomparáveis.
+                                </p>
 
-                            <p>O Poder da Reconstrução Completa Inclui:
+                            </div>
+                            <div id="ingredientes2" class="tab-content">
 
-                            <ul>
-                                <li>Potenza Shampoo Reconstrutivo:
+                                <p>O Poder da Reconstrução Completa Inclui:
 
-                                    Limpeza Terapêutica: Limpa suavemente, removendo impurezas enquanto inicia a
-                                    reposição de massa e nutrientes perdidos.
+                                <ul>
+                                    <li>Potenza Shampoo Reconstrutivo:
 
-                                    Prepara o Fio: Sua formulação equilibra o pH e prepara as cutículas para absorver os
-                                    ativos reconstrutores.
+                                        Limpeza Terapêutica: Limpa suavemente, removendo impurezas enquanto inicia a
+                                        reposição de massa e nutrientes perdidos.
 
-                                    Fórmula Avançada: Com Queratina Vegetal e Complexo de Reparo, fortalece o fio desde
-                                    a lavagem.
-                                </li>
-                                <li>Potenza Condicionador Reconstrutivo:
+                                        Prepara o Fio: Sua formulação equilibra o pH e prepara as cutículas para
+                                        absorver os
+                                        ativos reconstrutores.
 
-                                    Sela e Fortalece: Sela as cutículas, retendo os nutrientes essenciais e a hidratação
-                                    no interior do fio.
+                                        Fórmula Avançada: Com Queratina Vegetal e Complexo de Reparo, fortalece o fio
+                                        desde
+                                        a lavagem.
+                                    </li>
+                                    <li>Potenza Condicionador Reconstrutivo:
 
-                                    Ação Anti-Quebra: Devolve a elasticidade e a resistência, prevenindo a quebra e as
-                                    pontas duplas.
+                                        Sela e Fortalece: Sela as cutículas, retendo os nutrientes essenciais e a
+                                        hidratação
+                                        no interior do fio.
 
-                                    Efeito Liso e Brilho: Contribui para a disciplina dos fios, resultando em um toque
-                                    sedoso e brilho espelhado.
-                                </li>
-                                <li>Potenza Máscara Reconstrutiva (300g):
+                                        Ação Anti-Quebra: Devolve a elasticidade e a resistência, prevenindo a quebra e
+                                        as
+                                        pontas duplas.
 
-                                    Tratamento de Choque: É o coração da reconstrução, com alta concentração de ativos
-                                    para reparo intensivo.
+                                        Efeito Liso e Brilho: Contribui para a disciplina dos fios, resultando em um
+                                        toque
+                                        sedoso e brilho espelhado.
+                                    </li>
+                                    <li>Potenza Máscara Reconstrutiva (300g):
 
-                                    Fórmula Avançada: Atua no córtex e na cutícula, reconstruindo a estrutura interna do
-                                    cabelo danificado.
+                                        Tratamento de Choque: É o coração da reconstrução, com alta concentração de
+                                        ativos
+                                        para reparo intensivo.
 
-                                    Uso Profissional: Ideal para restaurar cabelos após processos de coloração,
-                                    descoloração ou alisamento.
-                                </li>
-                                <li>
-                                    Diferenciais da Linha (Cor Laranja):
+                                        Fórmula Avançada: Atua no córtex e na cutícula, reconstruindo a estrutura
+                                        interna do
+                                        cabelo danificado.
 
-                                    Foco Reconstrutivo: Reparação de danos causados por químicas, calor e agressões
-                                    diárias.
+                                        Uso Profissional: Ideal para restaurar cabelos após processos de coloração,
+                                        descoloração ou alisamento.
+                                    </li>
+                                    <li>
+                                        Diferenciais da Linha (Cor Laranja):
 
-                                    Fórmula Avançada de Reparo: Promove força, densidade e resistência.
+                                        Foco Reconstrutivo: Reparação de danos causados por químicas, calor e agressões
+                                        diárias.
 
-                                    Recuperação da Saúde: Devolve o balanço, o movimento e o aspecto saudável.
-                                </li>
+                                        Fórmula Avançada de Reparo: Promove força, densidade e resistência.
 
-                            </ul>
-                            </p>
-                        </div>
-                        <div id="modoDeUso2" class="tab-content">
+                                        Recuperação da Saúde: Devolve o balanço, o movimento e o aspecto saudável.
+                                    </li>
 
-                            <p>Instruções de Uso Profissional:
+                                </ul>
+                                </p>
+                            </div>
+                            <div id="modoDeUso2" class="tab-content">
 
-                            <ul>
-                                <li>Passo 1: Lave os cabelos com o Potenza Shampoo Reconstrutivo, massageando suavemente
-                                    o couro cabeludo e os fios. Enxágue completamente.
-                                </li>
-                                <li>Passo 2: Aplique o Potenza Condicionador Reconstrutivo, distribuindo uniformemente
-                                    ao longo dos fios. Deixe agir por alguns minutos e enxágue bem.
+                                <p>Instruções de Uso Profissional:
 
-                                </li>
-                                <li>Passo 3: Com os cabelos ainda úmidos, aplique a Potenza Máscara Reconstrutiva mecha
-                                    a mecha, garantindo que cada fio esteja bem coberto. Deixe agir por 10 a 15 minutos.
+                                <ul>
+                                    <li>Passo 1: Lave os cabelos com o Potenza Shampoo Reconstrutivo, massageando
+                                        suavemente
+                                        o couro cabeludo e os fios. Enxágue completamente.
+                                    </li>
+                                    <li>Passo 2: Aplique o Potenza Condicionador Reconstrutivo, distribuindo
+                                        uniformemente
+                                        ao longo dos fios. Deixe agir por alguns minutos e enxágue bem.
 
-                                </li>
-                                <li>Passo 4: Enxágue abundantemente até remover todo o produto. Finalize como desejar,
-                                    preferencialmente com secagem natural ou com secador em temperatura média.
-                                </li>
-                            </ul>
-                            Recomenda-se o uso semanal para manutenção dos resultados e recuperação contínua da saúde
-                            capilar.
-                            </p>
+                                    </li>
+                                    <li>Passo 3: Com os cabelos ainda úmidos, aplique a Potenza Máscara Reconstrutiva
+                                        mecha
+                                        a mecha, garantindo que cada fio esteja bem coberto. Deixe agir por 10 a 15
+                                        minutos.
+
+                                    </li>
+                                    <li>Passo 4: Enxágue abundantemente até remover todo o produto. Finalize como
+                                        desejar,
+                                        preferencialmente com secagem natural ou com secador em temperatura média.
+                                    </li>
+                                </ul>
+                                Recomenda-se o uso semanal para manutenção dos resultados e recuperação contínua da
+                                saúde
+                                capilar.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!--Fim produto 2-->
-                <!--Início produto 3-->
-                <div class="produto-item">
-                    <img src="../imagens/Tratamentos profissionais/Trat_Potenza verde.png" alt="Potenza Verde">
-                    <h3>Potenza Verde Tratamento</h3>
-                    <div class="tabs-container">
-                        <div class="tab-buttons">
-                            <button class="tab-button active" onclick="openTab(event, 'descrição3')">Descrição</button>
-                            <button class="tab-button" onclick="openTab(event, 'ingredientes3')">Ingredientes</button>
-                            <button class="tab-button" onclick="openTab(event, 'modoDeUso3')">Modo de uso</button>
-                        </div>
-                        <div id="descrição3" class="tab-content active">
-                            <p>
-                                Descubra o poder da transformação com a linha Potenza Straight Treatment, o tratamento
-                                de alta performance da WT Cosmetic Hair desenvolvido para quem busca um Efeito Mais Liso
-                                e Prolongado com máxima saúde e brilho. Com uma Fórmula Avançada e um toque de frescor,
-                                esta linha é a aliada perfeita para a manutenção de cabelos quimicamente tratados ou
-                                para o alinhamento natural dos fios.
+                    <!--Fim produto 2-->
+                    <!--Início produto 3-->
+                    <div class="produto-item">
+                        <img src="../imagens/Tratamentos profissionais/Trat_Potenza verde.png" alt="Potenza Verde">
+                        <h3>Potenza Verde Tratamento</h3>
+                        <!--Botão comprar pelo WhatsApp-->
+                        <div class="whatsapp-button-container">
+                            <a href="https://api.whatsapp.com/send/?phone=5585987550274&text=Ol%C3%A1%2C+gostaria+de+comprar+o+produto%3A+Potenza+Verde+Tratamento.+Poderia+me+ajudar%3F&type=phone_number&app_absent=0"
+                                target="_blank" class="whatsapp-button btn btn-success">
+                                COMPRAR PELO WHATSAPP
+                            </a>
 
-                            </p>
-                        </div>
-                        <div id="ingredientes3" class="tab-content">
-                            <p>O tratamento para Alinhamento e Manutenção inclui:
-                            <ul>
-                                <li>Potenza Shampoo Tratamento:
-                                    Limpeza e Preparação: Sua fórmula suave e eficaz limpa profundamente sem agredir a
-                                    fibra, removendo resíduos e preparando o cabelo para receber o tratamento.
+                            <div class="tabs-container">
+                                <div class="tab-buttons">
+                                    <button class="tab-button active"
+                                        onclick="openTab(event, 'descrição3')">Descrição</button>
+                                    <button class="tab-button"
+                                        onclick="openTab(event, 'ingredientes3')">Ingredientes</button>
+                                    <button class="tab-button" onclick="openTab(event, 'modoDeUso3')">Modo de
+                                        uso</button>
+                                </div>
+                                <div id="descrição3" class="tab-content active">
+                                    <p>
+                                        Descubra o poder da transformação com a linha Potenza Straight Treatment, o
+                                        tratamento
+                                        de alta performance da WT Cosmetic Hair desenvolvido para quem busca um Efeito
+                                        Mais Liso
+                                        e Prolongado com máxima saúde e brilho. Com uma Fórmula Avançada e um toque de
+                                        frescor,
+                                        esta linha é a aliada perfeita para a manutenção de cabelos quimicamente
+                                        tratados ou
+                                        para o alinhamento natural dos fios.
 
-                                    Efeito Liso Reforçado: Inicia o processo de alinhamento, suavizando a cutícula e
-                                    controlando o volume desde a primeira lavagem.
+                                    </p>
+                                </div>
+                                <div id="ingredientes3" class="tab-content">
+                                    <p>O tratamento para Alinhamento e Manutenção inclui:
+                                    <ul>
+                                        <li>Potenza Shampoo Tratamento:
+                                            Limpeza e Preparação: Sua fórmula suave e eficaz limpa profundamente sem
+                                            agredir a
+                                            fibra, removendo resíduos e preparando o cabelo para receber o tratamento.
 
-                                    Uso Profissional ou Home Care: Ideal para prolongar o resultado de procedimentos
-                                    químicos.
-                                </li>
-                                <li> Potenza Condicionador Tratamento:
-                                    Desembaraço Imediato: Sela as cutículas abertas pelo shampoo e garante um
-                                    desembaraço instantâneo.
+                                            Efeito Liso Reforçado: Inicia o processo de alinhamento, suavizando a
+                                            cutícula e
+                                            controlando o volume desde a primeira lavagem.
 
-                                    Efeito Liso Prolongado: Ajuda a manter a disciplina e o alinhamento dos fios,
-                                    protegendo-os de agentes externos que causam frizz e volume.
+                                            Uso Profissional ou Home Care: Ideal para prolongar o resultado de
+                                            procedimentos
+                                            químicos.
+                                        </li>
+                                        <li> Potenza Condicionador Tratamento:
+                                            Desembaraço Imediato: Sela as cutículas abertas pelo shampoo e garante um
+                                            desembaraço instantâneo.
 
-                                    Brilho e Maciez: Devolve a maleabilidade, o toque sedoso e um brilho intenso ao
-                                    cabelo.
-                                </li>
-                                <li> Potenza Máscara (300g):
-                                    Tratamento Intensivo: Com uma concentração de ativos ainda maior, esta máscara atua
-                                    na reconstrução e no selamento profundo.
+                                            Efeito Liso Prolongado: Ajuda a manter a disciplina e o alinhamento dos
+                                            fios,
+                                            protegendo-os de agentes externos que causam frizz e volume.
 
-                                    Fórmula Avançada: Penetra na fibra capilar, tratando o dano e promovendo um
-                                    alinhamento duradouro.
+                                            Brilho e Maciez: Devolve a maleabilidade, o toque sedoso e um brilho intenso
+                                            ao
+                                            cabelo.
+                                        </li>
+                                        <li> Potenza Máscara (300g):
+                                            Tratamento Intensivo: Com uma concentração de ativos ainda maior, esta
+                                            máscara atua
+                                            na reconstrução e no selamento profundo.
 
-                                    Foco em Força e Balanço: Deixa o cabelo não apenas liso, mas também fortalecido, com
-                                    balanço natural e livre de rigidez.
-                                </li>
-                                <li>Diferencias da linha (cor verde):
-                                    Straight Treatment: Tratamento especializado no alinhamento capilar.
+                                            Fórmula Avançada: Penetra na fibra capilar, tratando o dano e promovendo um
+                                            alinhamento duradouro.
 
-                                    Efeito Liso Prolongado: Ideal para manutenção de progressivas, botox ou para alisar
-                                    o cabelo naturalmente com o uso contínuo.
+                                            Foco em Força e Balanço: Deixa o cabelo não apenas liso, mas também
+                                            fortalecido, com
+                                            balanço natural e livre de rigidez.
+                                        </li>
+                                        <li>Diferencias da linha (cor verde):
+                                            Straight Treatment: Tratamento especializado no alinhamento capilar.
 
-                                    Fórmula Avançada: Com ingredientes de ponta para garantir performance e saúde do
-                                    fio.
+                                            Efeito Liso Prolongado: Ideal para manutenção de progressivas, botox ou para
+                                            alisar
+                                            o cabelo naturalmente com o uso contínuo.
 
-                                    Toque Revitalizante: A embalagem verde sugere um cuidado fresco e potente.
-                                </li>
-                            </ul>
-                            </p>
-                        </div>
-                        <div id="ModoDeUso" class="tab-content">
-                            <p>Instruções de Uso Profissional:
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                            </p>
+                                            Fórmula Avançada: Com ingredientes de ponta para garantir performance e
+                                            saúde do
+                                            fio.
+
+                                            Toque Revitalizante: A embalagem verde sugere um cuidado fresco e potente.
+                                        </li>
+                                    </ul>
+                                    </p>
+                                </div>
+                                <div id="ModoDeUso" class="tab-content">
+                                    <p>Instruções de Uso Profissional:
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                    </p>
+                                </div>
+
+                            </div>
                         </div>
 
                     </div>
-                </div>
-
-            </div>
 
         </section>
 

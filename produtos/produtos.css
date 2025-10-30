@@ -47,6 +47,7 @@ section.produtos-tratamento {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /*define a fonte padrão*/
 }
+
 .produtos-tratamento h2 {
     text-align: center;
     /*centraliza o título*/
@@ -54,21 +55,28 @@ section.produtos-tratamento {
     /*espaço acima e abaixo do título*/
     font-size: 2em;
     /*tamanho da fonte do título*/
-    color:#c7a45d;
+    color: #c7a45d;
     /*cor do título*/
-    font-weight: bold;/*deixa a fonte em negrito*/
+    font-weight: bold;
+    /*deixa a fonte em negrito*/
 }
 
 .produtos-tratamento .produto-item h3 {
-    text-align: center;/*centraliza o subtítulo*/
-    margin: 10px 0;/*espaço acima e abaixo do subtítulo*/
-    font-size: 1.5em;/*tamanho da fonte do subtítulo*/
-    color: #c7a45d;/*cor do subtítulo*/
-    font-weight: bolder;/*deixa a fonte em negrito*/
+    text-align: center;
+    /*centraliza o subtítulo*/
+    margin: 10px 0;
+    /*espaço acima e abaixo do subtítulo*/
+    font-size: 1.5em;
+    /*tamanho da fonte do subtítulo*/
+    color: #c7a45d;
+    /*cor do subtítulo*/
+    font-weight: bolder;
+    /*deixa a fonte em negrito*/
 }
 
 .produtos-tratamento p {
-    text-align: justify;/*alinha o texto nas duas margens*/
+    text-align: justify;
+    /*alinha o texto nas duas margens*/
     font-size: 1em;
     /*tamanho da fonte do parágrafo*/
     color: #3b3030;
@@ -76,6 +84,7 @@ section.produtos-tratamento {
     margin-bottom: 20px;
     /*espaço abaixo do parágrafo*/
 }
+
 .produto-grid {
     display: grid;
     /*define o container como grade*/
@@ -92,7 +101,7 @@ section.produtos-tratamento {
 }
 
 .produto-item {
-    background-color:antiquewhite;
+    background-color: antiquewhite;
     /*cor de fundo dos itens*/
     border: 1px solid #ddd;
     /*borda dos itens*/
@@ -107,12 +116,14 @@ section.produtos-tratamento {
     transform: 0.3s;
     /*transição suave*/
 }
+
 .produto-item:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     /*sombra ao passar o mouse*/
     transform: translateY(-5px);
     /*eleva o item ao passar o mouse*/
 }
+
 .produto-item img {
     width: 100%;
     /*imagem responsiva*/
@@ -122,8 +133,10 @@ section.produtos-tratamento {
     /*borda inferior da imagem*/
     margin-bottom: 10px;
     /*espaço abaixo da imagem*/
-    display: block;/*remove espaço em branco abaixo da imagem*/
+    display: block;
+    /*remove espaço em branco abaixo da imagem*/
 }
+
 .produto-item h3 {
     font-size: 1.2em;
     /*tamanho da fonte do título*/
@@ -132,6 +145,7 @@ section.produtos-tratamento {
     color: #1d1d1d;
     /*cor do título*/
 }
+
 .produto-item p {
     font-size: 1em;
     /*tamanho da fonte do parágrafo*/
@@ -140,61 +154,97 @@ section.produtos-tratamento {
     line-height: 1.5;
     /*altura da linha*/
 }
+
 /* Estilo geral do container */
 .tabs-container {
-    max-width: 800px;/*largura máxima do container de abas*/
-    margin: 20px auto;/*centraliza o container de abas*/
-    font-family: sans-serif;/*define a fonte padrão*/
-    border: 1px solid #ddd;/*borda do container de abas*/
-    border-radius: 8px;/*bordas arredondadas*/
-    overflow: hidden;/*remove o excesso de conteúdo*/ 
+    max-width: 800px;
+    /*largura máxima do container de abas*/
+    margin: 20px auto;
+    /*centraliza o container de abas*/
+    font-family: sans-serif;
+    /*define a fonte padrão*/
+    border: 1px solid #ddd;
+    /*borda do container de abas*/
+    border-radius: 8px;
+    /*bordas arredondadas*/
+    overflow: hidden;
+    /*remove o excesso de conteúdo*/
 }
+
 /* Estilo dos botões das abas */
 .tab-buttons {
-    display: flex;/*alinha os botões em linha*/
-    border-bottom: 1px solid #ddd;/*borda inferior dos botões*/
-    border: #c5eb39;/*cor de fundo dos botões*/
+    display: flex;
+    /*alinha os botões em linha*/
+    border-bottom: 1px solid #ddd;
+    /*borda inferior dos botões*/
+    border: #c5eb39;
+    /*cor de fundo dos botões*/
 }
 
 .tab-button {
-    flex: 1;/*cada botão ocupa o mesmo espaço*/
-    padding: 10px;/*espaço interno dos botões*/
-    background-color: #f1f1f1;/*cor de fundo dos botões*/
-    border: none;/*remove a borda dos botões*/
-    cursor: pointer;/*muda o cursor ao passar sobre os botões*/
-    font-size: 1em;/*tamanho da fonte dos botões*/
-    transition: background-color 0.3s;/*transição suave ao mudar a cor de fundo*/
+    flex: 1;
+    /*cada botão ocupa o mesmo espaço*/
+    padding: 10px;
+    /*espaço interno dos botões*/
+    background-color: #f1f1f1;
+    /*cor de fundo dos botões*/
+    border: none;
+    /*remove a borda dos botões*/
+    cursor: pointer;
+    /*muda o cursor ao passar sobre os botões*/
+    font-size: 1em;
+    /*tamanho da fonte dos botões*/
+    transition: background-color 0.3s;
+    /*transição suave ao mudar a cor de fundo*/
 }
 
 .tab-button:hover {
-    background-color: #ddd;/*cor de fundo ao passar o mouse*/
-    display: inline-block;/*exibe o botão como bloco inline*/
+    background-color: #ddd;
+    /*cor de fundo ao passar o mouse*/
+    display: inline-block;
+    /*exibe o botão como bloco inline*/
+
 }
+
 .tab-button.active {
-    background-color: #fff;/*cor de fundo do botão ativo*/
-    border-bottom: 2px solid #5a5a5a;/*borda inferior do botão ativo*/
-    font-weight: bold;/*deixa a fonte em negrito*/
-    color: #333;/*cor da fonte do botão ativo*/
-    display: inline-block;/*exibe o botão ativo como bloco inline*/
+    background-color: #fff;
+    /*cor de fundo do botão ativo*/
+    border-bottom: 2px solid #5a5a5a;
+    /*borda inferior do botão ativo*/
+    font-weight: bold;
+    /*deixa a fonte em negrito*/
+    color: #333;
+    /*cor da fonte do botão ativo*/
+    display: inline-block;
+    /*exibe o botão ativo como bloco inline*/
 }
+
 /* Estilo do conteúdo das abas */
 .tab-content {
-    display: none;/*oculta o conteúdo das abas*/
-    padding: 20px;/*espaço interno do conteúdo*/
-    border-top: none;/*remove a borda superior*/
-    background-color: #fff;/*cor de fundo do conteúdo*/
+    display: none;
+    /*oculta o conteúdo das abas*/
+    padding: 20px;
+    /*espaço interno do conteúdo*/
+    border-top: none;
+    /*remove a borda superior*/
+    background-color: #fff;
+    /*cor de fundo do conteúdo*/
 }
+
 /* Exibe o conteúdo ativo */
 .tab-content.active {
-    display: block;/*exibe o conteúdo ativo*/
+    display: block;
+    /*exibe o conteúdo ativo*/
 }
-/* Estilo responsivo */    
+
+/* Estilo responsivo */
 @media (max-width: 600px) {
     .produto-grid {
         grid-template-columns: 1fr;
         /*uma coluna em telas pequenas*/
     }
 }
+
 /*FIM PRODUTO1-TRATAMENTO-JÉSSICA   */
 
 .produto p {
