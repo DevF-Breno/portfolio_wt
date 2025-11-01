@@ -270,7 +270,9 @@ header {
     gap: 20px;
     justify-content: center;
     margin-top: 20px;
+    color: #957b46;
 }
+
 
 .video {
     position: relative;
@@ -294,18 +296,10 @@ header {
     margin-right: 50px;
 }
 
-.lanc h2{
-    text-align: center;
-    flex-wrap: wrap;
-}
-    
-
 .lanc p{
     position: relative;
     left: 100px;
 }
-
-
 
 /*jessica*/
 /*breno*/
