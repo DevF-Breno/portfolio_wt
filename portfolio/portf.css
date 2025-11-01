@@ -276,34 +276,34 @@ header {
     color: #957b46;
 }
 
-.lanc p {
+.lanc h1 {
+    text-align: center;
     position: relative;
-    left: 100px;
+    left: 150px;
+
+
 }
 
-.produto_lanc {
-    text-align: center;
-    justify-content: center;
-}
-.produto_lanc h3{ 
+.lanc h3 {
     color: #957b46;
-    font-size:20px;
+    font-size: 20px;
     position: relative;
     height: 100px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     right: 150px;
-    margin-bottom: 0;
-
+    top: 100px;
+    left: 150px;
+    margin-right: 50px;
 }
-.produto_lanc p{
+
+.lanc p {
+    text-align: center;
+    justify-content: center;
+    margin-right: 50px;
     position: relative;
-    text-align: justify;
-    flex-wrap: wrap;
-   line-height: 30px;
-   margin-top: 10px;
-
 }
+
 .video {
     position: relative;
     display: flex;
@@ -326,29 +326,9 @@ header {
     margin-right: 50px;
 }
 
-
-
 /*jessica*/
 /*breno*/
-
-.lancamentos {
-    position: relative;
-    left: 200px;
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    /*grade responsiva*/
-    justify-content: center;
-    padding: 20px;
-    /*faz que os itens filhos se tornem flexiveis*/
-    /*espaço de 15px entre os itens*/
-    flex-wrap: wrap;
-    /*faz que as imagens quebrem linha*/
-    color: #D7C48D;
-}
-
 /*jessica*/
-
 /*breno*/
 .text h2 {
     font-family: "Glorify", Sans-serif;
@@ -363,6 +343,11 @@ header {
     height: auto;
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.whatsapp-button-container {
+    display: block;
+    text-align: center;
 }
 
 
