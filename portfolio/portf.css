@@ -272,6 +272,15 @@ header {
     margin-top: 20px;
     color: #957b46;
 }
+.lanc p{
+    position: relative;
+    left: 100px;
+}
+
+.produto_lanc {
+    text-align: center; 
+    opacity: 0;
+}
 
 
 .video {
@@ -296,10 +305,7 @@ header {
     margin-right: 50px;
 }
 
-.lanc p{
-    position: relative;
-    left: 100px;
-}
+
 
 /*jessica*/
 /*breno*/
