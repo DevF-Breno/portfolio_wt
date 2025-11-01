@@ -79,9 +79,12 @@ header {
 }
 
 .redes img {
-    position: relative;/*posiciona os ícones das redes sociais*/
-    bottom: 15px;/*distância da parte inferior*/
-    gap: 10px;/*espaçamento entre os ícones*/
+    position: relative;
+    /*posiciona os ícones das redes sociais*/
+    bottom: 15px;
+    /*distância da parte inferior*/
+    gap: 10px;
+    /*espaçamento entre os ícones*/
 }
 
 .redes a:hover {
@@ -263,7 +266,7 @@ header {
     width: 250px;
 }
 
-.lanc   {
+.lanc {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -272,17 +275,35 @@ header {
     margin-top: 20px;
     color: #957b46;
 }
-.lanc p{
+
+.lanc p {
     position: relative;
     left: 100px;
 }
 
 .produto_lanc {
-    text-align: center; 
-    opacity: 0;
+    text-align: center;
+    justify-content: center;
 }
+.produto_lanc h3{ 
+    color: #957b46;
+    font-size:20px;
+    position: relative;
+    height: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    right: 150px;
+    margin-bottom: 0;
 
+}
+.produto_lanc p{
+    position: relative;
+    text-align: justify;
+    flex-wrap: wrap;
+   line-height: 30px;
+   margin-top: 10px;
 
+}
 .video {
     position: relative;
     display: flex;
