@@ -14,7 +14,7 @@ body {
     /*faz com que a página ocupe 100% da tela*/
     margin: 0%;
     /*remove a margem padrão*/
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     /*define a fonte padrão*/
     background-color: white;
     /*cor de fundo da página*/
@@ -162,7 +162,7 @@ header {
     /* Espaçamento entre a imagem e o texto */
     padding: 40px;
     margin: 100px 0px 100px 200px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .informe img,
@@ -190,7 +190,7 @@ header {
     /* Limita a largura do texto */
     color: #D7C48D;
     /*cor da fonte*/
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .sobre h1 {
@@ -231,7 +231,7 @@ header {
     /*remove o sublinhado dos links*/
     color: rgb(64, 64, 64);
     /*cor da fonte*/
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     /*deixa a fonte em negrito*/
     text-align: center;
@@ -288,7 +288,7 @@ header {
     color: #957b46;
     font-size: 20px;
     position: relative;
-    height: 100px;/
+    height: 100px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     right: 150px;
@@ -326,12 +326,8 @@ header {
     margin-right: 50px;
 }
 
-/*jessica*/
-/*breno*/
-/*jessica*/
-/*breno*/
 .text h2 {
-    font-family: "Glorify", Sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     color: #957b46;
     margin-bottom: 20px;
@@ -355,32 +351,6 @@ header {
     width: 300px;
 }
 
-/*breno*/
-
-/*jessica*/
-footer {
-    background-color: antiquewhite;
-    /*cor de fundo da página*/
-    color: #957b46;
-    /*cor da fonte*/
-    font-weight: bold;
-    /*deixa a fonte em negrito*/
-    font-size: small;
-    text-align: center;
-    /*alinha o texto ao centro*/
-    ;
-    padding: 5px;
-    /*espaço interno*/
-    bottom: 0;
-    /*faz com que o rodapé fique na parte inferior da página*/
-    width: 100%;
-    /*faz com que o rodapé ocupe 100% da largura da página*/
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /*define a fonte padrão*/
-}
-
-/*jessica*/
-
 .contato {
     margin: 50px 0px 50px 0px;
     position: relative;
@@ -403,6 +373,26 @@ footer {
     position: relative;
     bottom: 15px;
     width: 50px;
+}
+footer {
+    background-color: antiquewhite;
+    /*cor de fundo da página*/
+    color: #957b46;
+    /*cor da fonte*/
+    font-weight: bold;
+    /*deixa a fonte em negrito*/
+    font-size: small;
+    text-align: center;
+    /*alinha o texto ao centro*/
+    ;
+    padding: 5px;
+    /*espaço interno*/
+    bottom: 0;
+    /*faz com que o rodapé fique na parte inferior da página*/
+    width: 100%;
+    /*faz com que o rodapé ocupe 100% da largura da página*/
+    font-family: 'Poppins', sans-serif;
+    /*define a fonte padrão*/
 }
 
 
