@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WT cosmetics Hair</title>
+    <title>WT Nossos Produtos</title>
+    <link rel="stylesheet" href="../produtos/produtos.css">
     <link rel="shortcut icon" href="../imagens/logowt-removebg-preview.png" type="image/x-icon">
-    <link rel="stylesheet" href="#">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 </head>
 
@@ -15,275 +15,381 @@
         <div class="tudo">
             <nav class="navbar navbar-expand-lg mx-auto">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="../imagens/logowt-removebg-preview.png" alt="">
+                    <a class="navbar-brand" href="../portfolio/index.html">
+                        <img src="../imagens/logowt-removebg-preview.png" alt="logo" class="logo" style="height: 50px;">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="../portfolio/index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#sobre">Sobre nós</a>
+                                <a class="nav-link" href="../portfolio/index.html#sobre">Sobre nós</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    Produtos
-                                </a>
+                                <a class="nav-link" href="../portfolio/index.html#categoria">Produtos</a>
                             </li>
-                            <li>
+                            <!---  <li>
                                 <a class="nav-link" href="#">Onde Estamos</a>
-                            </li>
+                            </li>-->
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
+
     </header>
 
 
 
-    <section id="nossos-produtos">
-        <div class="nossos-produtos">
-            <div class="produto4">
-                <h3>Botox Blond</h3>
-            </div>
-            <div class="informe_produto">
-                <div class="img_produto">
+    <section class="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="produto-grid">
+                <!-- Produto 1 -->
+                <div class="produto-item">
                     <img src="../imagens/Nossos produtos/produtos_botox_1.png" alt="Botox Blond">
-                </div>
-                <div class="descricao">
-                    <ul>
-                        <li><strong>Tratamento Matizador e Repositor de Massa</strong> | WT Cosmetic Hair
+                    <h3>Botox Blond</h3>
+                    <!--Botão de comprar pelo whatsApp-->
+                    <div class="whatsapp-button-container">
+                        <a href="https://api.whatsapp.com/send/?phone=5585987550274&text=Ol%C3%A1%2C+gostaria+de+comprar+o+produto%3A+Botox+Blond.+Poderia+me+ajudar%3F&type=phone_number&app_absent=0"
+                            target="_blank" class="whatsapp-button btn btn-success">
+                            COMPRAR PELO WHATSAPP
+                        </a>
+                    </div>
+                    <div class="tabs-container">
+                        <!-- botões das abas -->
+                        <div class="tab-buttons">
+                            <button class="tab-button active" onclick="openTab(event, 'descrição')">Descrição</button>
+                            <button class="tab-button" onclick="openTab(event, 'ingredientes')">Ingredientes</button>
+                            <button class="tab-button" onclick="openTab(event, 'modoDeUso')">Modo de uso</button>
+                        </div>
+                        <div id="descrição" class="tab-content active">
+
+                            <p>Tratamento Matizador e Repositor de Massa | WT Cosmetic Hair
                             O BOTOX BLOND da WT Cosmetic Hair é o tratamento definitivo desenvolvido especificamente
                             para atender às necessidades dos cabelos loiros, descoloridos ou com mechas. Ele combina a
                             eficácia da Reposição de Massa, Força e Resistência com a ação matizadora, garantindo um
                             loiro impecável, livre de tons amarelados indesejados e com total controle de volume e
-                            frizz.</li>
-                        <li><strong>Foco em Loiros Saudáveis e Matizados:</strong></li>
-                        <li>Ação Matizadora: Possui pigmentos violetas que neutralizam o amarelado e o alaranjado,
-                            revelando um loiro platinado ou acinzentado de forma suave e controlada.</li>
-                        <li>Reposição de Massa e Força: Preenche as áreas porosas e danificadas dos fios (comuns em
-                            loiros), devolvendo a densidade, a elasticidade e a resistência perdidas durante os
-                            processos de descoloração.</li>
-                        <li>Redução de Volume e Frizz: Promove um alinhamento disciplinante que sela as cutículas,
-                            controlando o volume excessivo e o temido frizz, resultando em fios mais lisos e
-                            comportados.</li>
-                    </ul>
+                            frizz.
+                            </p>
+
+                        </div>
+
+                        <div id="ingredientes" class="tab-content">
+
+                            <p>Os ingredientes principais são:
+                            <ul>
+                                <li>
+                                    Manteiga de Cupuaçu: Alto poder de hidratação e emoliência, melhora a elasticidade e a
+                                    maciez do fio.
+                                </li>
+                                <li>
+                                    Óleo de Coco: Nutrição profunda que sela e confere brilho intenso.
+                                </li>
+                                <li>
+                                    Segurança e Conforto: Fórmula ZERO FORMOL, garantindo um tratamento seguro para o
+                                    profissional e para a cliente, sem odores fortes ou desconforto.
+                                </li>
+                            </ul>
+                            Essa combinação visa proporcionar um Loiro Neutralizado e com brilho platinado, cabelos mais fortes, encorpados e resistentes à quebra.
+                            </p>
+
+                        </div>
+                        <div id="modoDeUso" class="tab-content">
+
+                            <!--<p>O tratamento é um processo de quatro etapas:-->
+
+                            <ol>
+                                <li>
+                                    <!--<strong>Lavar:</strong>-->
+                                    Uso Exclusivo Profissional.
+                                </li>
+                                <li>
+                                    <!--<strong>Condicionar:</strong>-->
+                                    Aplicar sobre os cabelos limpos e úmidos, mecha a mecha, enluvando.
+                                </li>
+                                <li>
+                                    <!--<strong>Tratar (Máscara):</strong>-->
+                                    Deixar o tempo de pausa (que deve ser monitorado para o tom do loiro desejado).
+                                </li>
+                                <li>
+                                    <!--<strong>Finalizar:</strong>-->
+                                    Enxaguar e finalizar com escova e prancha para selar os ativos.
+                                </li>
+                            </ol>
+                            <!--Recomenda-se o uso semanal para manutenção dos resultados e recuperação contínua da saúde
+                            capilar.-->
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
-        </div>
-        <div class="beneficios">
-            <ul>
-                <li><strong>Benefícios Imediatos:</strong></li>
-                <li>Loiro Neutralizado e com brilho platinado.</li>
-                <li>Cabelos mais fortes, encorpados e resistentes à quebra.</li>
-                <li>Volume reduzido e frizz eliminado.</li>
-                <li>Maciez e sedosidade restauradas.</li>
-            </ul>
-            <div class="ingredientes">
-                <ul>
-                    <li><strong>Nutrição Intensiva: Enriquecido com a dupla poderosa:</strong></li>
-                    <li>Manteiga de Cupuaçu: Alto poder de hidratação e emoliência, melhora a elasticidade e a
-                        maciez do fio.</li>
-                    <li>Óleo de Coco: Nutrição profunda que sela e confere brilho intenso.</li>
-                    <li>Segurança e Conforto: Fórmula ZERO FORMOL, garantindo um tratamento seguro para o
-                        profissional e para a cliente, sem odores fortes ou desconforto.</li>
-                    <li>Volume Profissional: Pote de 1 Kg, ideal para o uso contínuo em salões.</li>
-                </ul>
-            </div>
-            <div class="modo-uso">
-                <ul>
-                    <li><strong>Modo de Uso:</strong></li>
-                    <li>Uso Exclusivo Profissional.</li>
-                    <li>Aplicar sobre os cabelos limpos e úmidos, mecha a mecha, enluvando.</li>
-                    <li>Deixar o tempo de pausa (que deve ser monitorado para o tom do loiro desejado).</li>
-                    <li>Enxaguar e finalizar com escova e prancha para selar os ativos.</li>
-                </ul>
-            </div>
-        </div>
-        <!--Divisão de Produtos-->
-        <div class="nossos-produtos">
-            <div class="produto4">
-                <h3>BOTOX ORGANIC</h3>
-            </div>
-            <div class="informe_produto">
-                <div class="img_produto">
-                    <img src="../imagens/Nossos produtos/produtos_botox_2.png" alt="Botox Organic">
-                </div>
-                <div class="descricao">
-                    <ul>
-                        <li><strong>O BOTOX ORGANIC</strong> da <strong>W T Cosmetic Hair</strong> é a resposta
+                <!-- Fim do Produto 1 -->
+                <!--Início produto 2-->
+                <div class="produto-item">
+                    <img src="../imagens/Nossos produtos/produtos_botox_2.png" alt="Potenza Laranja">
+                    <h3>BOTOX ORGANIC</h3>
+                    <!--Botão comprar pelo WhatsApp-->
+                    <div class="whatsapp-button-container">
+                        <a href="https://api.whatsapp.com/send/?phone=5585987550274&text=Ol%C3%A1%2C+gostaria+de+comprar+o+produto%3A+BOTOX+ORGANIC.+Poderia+me+ajudar%3F&type=phone_number&app_absent=0"
+                            target="_blank" class="whatsapp-button btn btn-success">
+                            COMPRAR PELO WHATSAPP </a>
+                    </div>
+
+                    <div class="tabs-container">
+                        <!-- botões das abas -->
+                        <div class="tab-buttons">
+                            <button class="tab-button active" onclick="openTab(event, 'descrição2')">Descrição</button>
+                            <button class="tab-button" onclick="openTab(event, 'ingredientes2')">Ingredientes</button>
+                            <button class="tab-button" onclick="openTab(event, 'modoDeUso2')">Modo de uso</button>
+                        </div>
+                        <div id="descrição2" class="tab-content active">
+
+                            <p>O BOTOX ORGANIC da W T Cosmetic Hair é a resposta
                             tecnológica para cabelos que necessitam de tratamento profundo, redução de volume e
                             alinhamento, com o compromisso de uma fórmula LIVRE DE FORMOL. Este tratamento de BIO
                             RESTAURAÇÃO age intensivamente para devolver força, resistência e vitalidade aos fios.
-                        </li>
-                        <li><strong>Foco em Tratamento e Performance:</strong></li>
-                        <li>Reposição de Massa e Força: Ideal para cabelos danificados, porosos e quimicamente
-                            tratados. O tratamento atua preenchendo as fissuras da fibra capilar, devolvendo o corpo
-                            e a densidade perdidos.</li>
-                        <li>Redução de Volume e Frizz: Proporciona um alinhamento disciplinante, que reduz o volume
-                            excessivo e elimina o frizz, resultando em cabelos mais controlados e com balanço
-                            natural.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="beneficios">
-                <ul>
-                    <li><strong>Benefícios Imediatos:</strong></li>
-                    <li>Cabelos visivelmente mais fortes e resistentes.</li>
-                    <li>Volume controlado e liso progressivo de longa duração.</li>
-                    <li>Brilho intenso e maciez ao toque.</li>
-                    <li>Restauração da elasticidade natural do fio.</li>
-                </ul>
-            </div>
-            <div class="ingredientes">
-                <ul>
-                    <li><strong>Fórmula Bio Complex (Tecnologia Avançada):</strong></li>
-                    <li>Sericina: Proteína que sela as cutículas, conferindo brilho e sedosidade.</li>
-                    <li>Queratina: Componente essencial que reconstrói a estrutura interna do fio, garantindo
-                        resistência.</li>
-                    <li>Macadâmia: Óleo altamente nutritivo que hidrata profundamente, prevenindo o ressecamento.
-                    </li>
-                    <li>Segurança e Conforto: Fórmula SEM FORMOL, oferecendo um tratamento seguro para o
-                        profissional e para a cliente, sem odores fortes ou desconforto.</li>
-                    <li>Volume Profissional: Pote de 1 Kg, ideal para o uso contínuo em salões.</li>
-                </ul>
-            </div>
-            <div class="modo-uso">
-                <ul>
-                    <li><strong>Modo de Uso:</strong></li>
-                    <li>Uso Exclusivo Profissional.</li>
-                    <li>Aplicar sobre os cabelos limpos e secos, mecha a mecha, enluvando.</li>
-                    <li>Deixar o tempo de pausa (conforme indicação técnica do fabricante).</li>
-                    <li>Enxaguar levemente e finalizar com escova e prancha para selar os ativos.</li>
-                </ul>
-            </div>
+                            </p>
 
-        </div>
-        <!--Divisão de Produtos-->
-        <div class="nossos-produtos">
-            <div class="produto4">
-                <h3>Potenza Straight Treatment</h3>
-            </div>
-            <div class="informe_produto">
-                <div class="img_produto">
-                    <img src="../imagens/Nossos produtos/produtos_escova orgânica.png" alt="Alpha Lizz">
+                        </div>
+                        <div id="ingredientes2" class="tab-content">
+
+                            <p>Os ingredientes principais são:
+                            <ul>
+                                <li>
+                                    Sericina: Proteína que sela as cutículas, conferindo brilho e sedosidade.
+                                </li>
+                                <li>
+                                    Queratina: Componente essencial que reconstrói a estrutura interna do fio, garantindo
+                                    resistência.
+                                </li>
+                            </ul>
+                            Esses ativos trabalham juntos para cabelos visivelmente mais fortes e resistentes, volume controlado e liso progressivo de longa duração.
+                            </p>
+                        </div>
+                        <div id="modoDeUso2" class="tab-content">
+
+                            <!--<p>O tratamento é um processo de quatro etapas:-->
+
+                            <ol>
+                                <li>
+                                    <!--<strong>Limpeza:</strong>-->
+                                    Uso Exclusivo Profissional.
+                                </li>
+                                <li>
+                                    <!--<strong>Condicionamento:</strong>-->
+                                    Aplicar sobre os cabelos limpos e secos, mecha a mecha, enluvando.
+                                </li>
+                                <li>
+                                    <!--<strong>Tratamento Intensivo:</strong>-->
+                                    Deixar o tempo de pausa (conforme indicação técnica do fabricante).
+                                </li>
+                                <li>
+                                    <!--<strong>Finalização:</strong>-->
+                                    Enxaguar levemente e finalizar com escova e prancha para selar os ativos.
+                                </li>
+                            </ol>
+                            <!--Recomenda-se o uso semanal para manutenção dos resultados e recuperação contínua da
+                            saúde
+                            capilar.-->
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="descricao">
-                    <ul>
-                        <li><strong>O POTENZA STRAIGHT TREATMENT</strong> é a evolução em alisamento e redução de
+                <!--Fim produto 2-->
+
+                <!--Início produto 3-->
+                <div class="produto-item">
+                    <img src="../imagens/Nossos produtos/produtos_escova orgânica.png" alt="Potenza Straight Treatment">
+                    <h3>Potenza Straight Treatment</h3>
+                    <!--Botão comprar pelo WhatsApp-->
+                    <div class="whatsapp-button-container">
+                        <a href="https://api.whatsapp.com/send/?phone=5585987550274&text=Ol%C3%A1%2C+gostaria+de+comprar+o+produto%3A+Potenza+Straight+Treatment.+Poderia+me+ajudar%3F&type=phone_number&app_absent=0"
+                            target="_blank" class="whatsapp-button btn btn-success">
+                            COMPRAR PELO WHATSAPP </a>
+                    </div>
+
+                    <div class="tabs-container">
+                        <!-- botões das abas -->
+                        <div class="tab-buttons">
+                            <button class="tab-button active" onclick="openTab(event, 'descrição3')">Descrição</button>
+                            <button class="tab-button" onclick="openTab(event, 'ingredientes3')">Ingredientes</button>
+                            <button class="tab-button" onclick="openTab(event, 'modoDeUso3')">Modo de uso</button>
+                        </div>
+                        <div id="descrição3" class="tab-content active">
+
+                            <p>O POTENZA STRAIGHT TREATMENT é a evolução em alisamento e redução de
                             volume. Desenvolvido pela WT Cosmetic Hair para uso EXCLUSIVO PROFISSIONAL, este tratamento
                             oferece um liso saudável e duradouro, combinando a eficácia da redução de volume com a
-                            nutrição de ingredientes orgânicos e tecnológicos.</li>
-                        <li><strong>Destaques e Ação do Produto:</strong></li>
-                        <li>Redutor de Volume e Alisamento: Formulado para proporcionar um liso perfeito, disciplinado e
-                            com movimento natural, reduzindo significativamente o volume e o frizz.</li>
-                        <li>Uso Profissional: Ideal para o profissional que busca uma "Escova Orgânica" ou um tratamento
-                            de alisamento progressivo de alta qualidade e com segurança para o cliente.</li>
-                    </ul>
+                            nutrição de ingredientes orgânicos e tecnológicos.
+                            </p>
+
+                        </div>
+                        <div id="ingredientes3" class="tab-content">
+
+                            <p>Os ingredientes principais são:
+
+                            <ul>
+                                <li>
+                                    A base da fórmula é um poderoso blend de aminoácidos
+                                    que atuam na fibra capilar, reestruturando as ligações e promovendo o alinhamento dos fios
+                                    sem o uso de substâncias agressivas como o formol.
+                                </li>
+                                <li>
+                                    Enriquecido com Coconut Oil (Óleo de Coco): O Óleo de Coco, conhecido por seu alto poder de
+                                    penetração, garante uma nutrição profunda durante o processo, protegendo o cabelo contra o
+                                    ressecamento e conferindo brilho e maciez intensos.
+                                </li>
+                                <li>
+                                    Óleo de Coco: Nutrição profunda que sela e confere brilho intenso.  
+                                </li>
+                            </ul>
+                            Este produto oferece uma saúde do fio fazendo com que o alinhamento seja feito de forma menos agressiva, graças à base de aminoácidos,
+                            preservando a saúde e o brilho do cabelo.
+                            </p>
+                        </div>
+                        <div id="modoDeUso3" class="tab-content">
+
+                            <p><!--O tratamento é um processo de quatro etapas:-->
+
+                            <ol>
+                                <li>
+                                    <!--<strong>Lavar:</strong>-->
+                                    Uso Exclusivo Profissional.
+                                </li>
+                                <li>
+                                    <!--<strong>Condicionar:</strong>-->
+                                    Seguir rigorosamente as instruções do fabricante para o protocolo do Step 1 (lavagem
+                                    preparatória) e do Step 2 (aplicação, tempo de pausa e selagem térmica).
+                                </li>
+                                <li>
+                                    <!--<strong>Tratar:</strong>-->
+                                    2 Step (Passo): Este é o principal ativo do seu processo de alisamento, aplicado após a lavagem
+                                    preparatória (o Shampoo Step 1, vendido separadamente, geralmente).
+                                </li>
+                                <!--<li>
+                                    <strong>Finalizar:</strong>
+                                    Enxágue abundantemente para remover todo o produto e seque o cabelo como
+                                    preferir (naturalmente ou com secador).
+                                </li>-->
+                            </ol>
+                            <!--Recomenda-se o uso semanal para manutenção dos resultados e recuperação contínua da
+                            saúde
+                            capilar.-->
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="beneficios">
-            <ul>
-                <li><strong>Benefícios para o Profissional e Cliente:</strong></li>
-                <li>Liso Duradouro e Natural: Proporciona um efeito liso que se mantém por semanas, com aspecto natural
-                    e balanço.</li>
-                <li>Saúde do Fio: O alinhamento é feito de forma menos agressiva, graças à base de aminoácidos,
-                    preservando a saúde e o brilho do cabelo.</li>
-                <li>Versatilidade: Pode ser utilizado em diversos tipos de cabelo (virgens, coloridos, descoloridos)
-                    após avaliação profissional</li>
-            </ul>
-            <div class="ingredientes">
-                <ul>
-                    <li><strong>Blend Aminoácidos (Lissant System): </strong></li>
-                    <li>A base da fórmula é um poderoso blend de aminoácidos
-                            que atuam na fibra capilar, reestruturando as ligações e promovendo o alinhamento dos fios
-                            sem o uso de substâncias agressivas como o formol.</li>
-                    <li>Enriquecido com Coconut Oil (Óleo de Coco): O Óleo de Coco, conhecido por seu alto poder de
-                        penetração, garante uma nutrição profunda durante o processo, protegendo o cabelo contra o
-                        ressecamento e conferindo brilho e maciez intensos.</li>
-                    <li>Óleo de Coco: Nutrição profunda que sela e confere brilho intenso.</li>
-                </ul>
-            </div>
-            <div class="modo-uso">
-                <ul>
-                    <li><strong>Modo de Uso:</strong></li>
-                    <li>Uso Exclusivo Profissional.</li>
-                    <li>Seguir rigorosamente as instruções do fabricante para o protocolo do Step 1 (lavagem
-                        preparatória) e do Step 2 (aplicação, tempo de pausa e selagem térmica).</li>
-                    <li>2 Step (Passo): Este é o principal ativo do seu processo de alisamento, aplicado após a lavagem
-                        preparatória (o Shampoo Step 1, vendido separadamente, geralmente).</li>
-                </ul>
-            </div>
-        </div>
-        <!--Divisão de Produtos-->
-        <div class="nossos-produtos">
-            <div class="produto4">
-                <h3>Alpha Lizz</h3>
-            </div>
-            <div class="informe_produto">
-                <div class="img_produto">
+                <!--Início produto 4-->
+                <div class="produto-item">
                     <img src="../imagens/Nossos produtos/produtos_redutor volume.png" alt="Alpha Lizz">
-                </div>
-                <div class="descricao">
-                    <ul>
-                        <li><strong>O ALFHA LIZZ Strawberry Treatment REDUTOR</strong> é o ápice da tecnologia de
+                    <h3>Alpha Lizz</h3>
+                    <!--Botão comprar pelo WhatsApp-->
+                    <div class="whatsapp-button-container">
+                        <a href="https://api.whatsapp.com/send/?phone=5585987550274&text=Ol%C3%A1%2C+gostaria+de+comprar+o+produto%3A+Alpha+Lizz.+Poderia+me+ajudar%3F&type=phone_number&app_absent=0"
+                            target="_blank" class="whatsapp-button btn btn-success">
+                            COMPRAR PELO WHATSAPP </a>
+                    </div>
+
+                    <div class="tabs-container">
+                        <!-- botões das abas -->
+                        <div class="tab-buttons">
+                            <button class="tab-button active" onclick="openTab(event, 'descrição4')">Descrição</button>
+                            <button class="tab-button" onclick="openTab(event, 'ingredientes4')">Ingredientes</button>
+                            <button class="tab-button" onclick="openTab(event, 'modoDeUso4')">Modo de uso</button>
+                        </div>
+                        <div id="descrição4" class="tab-content active">
+
+                            <p>O ALPHA LIZZ Strawberry Treatment REDUTOR é o ápice da tecnologia de
                             alisamento e redução de volume. Desenvolvido para uso EXCLUSIVO PROFISSIONAL, este poderoso
                             Passo 2 oferece um tratamento de alinhamento capilar de alta performance, com o delicioso e
-                            suave aroma de Strawberry (Morango).</li>
-                        <li><strong>Destaques e Ação do Produto:</strong></li>
-                        <li>Tratamento Redutor de Volume: Fórmula avançada que atua diretamente na fibra capilar,
-                            promovendo o realinhamento dos fios. Reduz o volume excessivo, elimina o frizz e proporciona
-                            um efeito liso duradouro e com movimento natural.
-                        </li>
-                        <li>Fórmula Avançada: Desenvolvida com ativos de alta tecnologia que promovem a selagem das
-                            cutículas sob ação térmica, resultando em um liso espelhado e toque sedoso.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="beneficios">
-            <ul>
-                <li><strong>Benefícios para o Profissional e Cliente:</strong></li>
-                <li>Liso Perfeito: Entrega um liso excepcional, com aspecto natural e fios disciplinados.</li>
-                <li>Brilho Intenso: O selamento da cutícula confere um brilho superior e protege a cor.</li>
-                <li>Zero Frizz: Controle total sobre os fios rebeldes, mesmo em ambientes úmidos.</li>
-                <li>Experiência Olfativa: O aroma de Morango torna o procedimento mais agradável do que as tradicionais
-                    progressivas.</li>
-            </ul>
-            <div class="ingredientes">
-                <ul>
-                    <li><strong>Blend Aminoácidos (Lissant System): A base da fórmula é um poderoso blend de aminoácidos
-                            que atuam na fibra capilar, reestruturando as ligações e promovendo o alinhamento dos fios
-                            sem o uso de substâncias agressivas como o formol.</strong></li>
-                    <li>Enriquecido com Coconut Oil (Óleo de Coco): O Óleo de Coco, conhecido por seu alto poder de
-                        penetração, garante uma nutrição profunda durante o processo, protegendo o cabelo contra o
-                        ressecamento e conferindo brilho e maciez intensos.</li>
-                    <li>Óleo de Coco: Nutrição profunda que sela e confere brilho intenso.</li>
-                </ul>
-            </div>
-            <div class="modo-uso">
-                <ul>
-                    <li><strong>Modo de Uso:</strong></li>
-                    <li>Uso Exclusivo Profissional.</li>
-                    <li>Seguir rigorosamente o protocolo de aplicação do sistema ALFHA LIZZ.</li>
-                    <li>Aplicar o produto mecha a mecha, respeitando o tempo de pausa, e realizar a selagem térmica com
-                        o auxílio de secador e prancha, conforme as recomendações técnicas.</li>
-                    <li>PASSO 2 (Ativo Redutor): Este é o principal componente do tratamento de alisamento, responsável
-                        pelo selamento e pela transformação da forma do fio, devendo ser aplicado após o shampoo de
-                        limpeza profunda (Passo 1).</li>
-                </ul>
-            </div>
-        </div>
+                            suave aroma de Strawberry (Morango).
+                            </p>
 
+                        </div>
+                        <div id="ingredientes4" class="tab-content">
+
+                            <p>Os ingredientes principais são:
+
+                            <ul>
+                                <li>
+                                    Blend Aminoácidos (Lissant System): A base da fórmula é um poderoso blend de aminoácidos
+                                    que atuam na fibra capilar, reestruturando as ligações e promovendo o alinhamento dos fios
+                                    sem o uso de substâncias agressivas como o formol.
+                                </li>
+                                <li>
+                                    Enriquecido com Coconut Oil (Óleo de Coco): O Óleo de Coco, conhecido por seu alto poder de
+                                    penetração, garante uma nutrição profunda durante o processo, protegendo o cabelo contra o
+                                    ressecamento e conferindo brilho e maciez intensos.
+                                </li>
+                                <li>
+                                    Óleo de Coco: Nutrição profunda que sela e confere brilho intenso.  
+                                </li>
+                            </ul>
+                            Este produto entrega um liso excepcional, com aspecto natural e fios disciplinados, junto com o selamento da cutícula confere um brilho superior e protege a cor.
+                            </p>
+                        </div>
+                        <div id="modoDeUso4" class="tab-content">
+
+                            <p><!--O tratamento é um processo de quatro etapas:-->
+
+                            <ol>
+                                <li>
+                                    <!--<strong>Lavar:</strong>-->
+                                    Uso Exclusivo Profissional.
+                                </li>
+                                <li>
+                                    <!--<strong>Condicionar:</strong>-->
+                                    Seguir rigorosamente o protocolo de aplicação do sistema ALFHA LIZZ.
+                                </li>
+                                <li>
+                                    <!--<strong>Tratar:</strong>-->
+                                    Aplicar o produto mecha a mecha, respeitando o tempo de pausa, e realizar a selagem térmica com
+                                    o auxílio de secador e prancha, conforme as recomendações técnicas.
+                                </li>
+                                <li>
+                                    <!--<strong>Finalizar:</strong>-->
+                                    PASSO 2 (Ativo Redutor): Este é o principal componente do tratamento de alisamento, responsável
+                                    pelo selamento e pela transformação da forma do fio, devendo ser aplicado após o shampoo de
+                                    limpeza profunda (Passo 1).
+                                </li>
+                            </ol>
+                            <!--Recomenda-se o uso semanal para manutenção dos resultados e recuperação contínua da
+                            saúde
+                            capilar.-->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--Fim produto 4-->
+            </div>
+        </div>
+        
     </section>
+        <script src="produtoscript.js">
+
+        function openTab(event, tabName) {
+
+            // Esconde todo o conteúdo das abas
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(tab => tab.classList.remove('active'));
+
+            // Remove a classe 'active' de todos os botões
+            const tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => button.classList.remove('active'));
+            // Mostra o conteúdo da aba selecionada
+            document.getElementById(tabName).classList.add('active');
+            // Adiciona a classe 'active' ao botão clicado
+            event.currentTarget.classList.add('active');
+        }
+
+    </script>
 
     <footer>
         <p>&copy; Cosmetics Hair. Direitos Reservados 2025.
