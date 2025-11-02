@@ -49,7 +49,7 @@ section.produtos {
     /*cor de fundo da seção*/
     padding: 40px 20px;
     /*espaço interno da seção*/
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     /*define a fonte padrão*/
 }
 
@@ -311,6 +311,6 @@ footer {
     /*faz com que o rodapé fique na parte inferior da página*/
     width: 100%;
     /*faz com que o rodapé ocupe 100% da largura da página*/
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     /*define a fonte padrão*/
 }
