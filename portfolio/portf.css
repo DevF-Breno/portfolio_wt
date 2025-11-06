@@ -26,8 +26,23 @@ body {
     /*oculta a barra de rolagem no firefox*/
     scroll-behavior: smooth;
     /*adiciona um efeito de rolagem suave*/
-
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+
 
 header {
     width: 100%;
@@ -373,16 +388,17 @@ footer {
     font-weight: bold;
     /*deixa a fonte em negrito*/
     font-size: small;
-    text-align: center;
-    /*alinha o texto ao centro*/
-    padding: 5px;
-    /*espaço interno*/
     bottom: 0;
     /*faz com que o rodapé fique na parte inferior da página*/
     width: 100%;
     /*faz com que o rodapé ocupe 100% da largura da página*/
     font-family: 'Poppins', sans-serif;
     /*define a fonte padrão*/
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    position: fixed;
+    z-index: 0;
 }
 
 
