@@ -413,16 +413,6 @@ footer {
 
 
 
-
-
-@media (max-widht:480px) {
-
-    /*Cria formatação especifica para telas até 400px*/
-    #sobre {
-        flex-direction: column;
-    }
-}
-
 /* ===============================
    🧩 AJUSTES RESPONSIVOS GERAIS
 =============================== */
