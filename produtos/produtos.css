@@ -51,6 +51,7 @@ section.produtos {
     /*espaço interno da seção*/
     font-family: 'Poppins', sans-serif;
     /*define a fonte padrão*/
+      
 }
 
 .produtos h2 {
@@ -93,7 +94,7 @@ section.produtos {
 .produto-grid {
     display: grid;
     /*define o container como grade*/
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     /*grade responsiva*/
     gap: 20px;
     /*espaço entre os itens*/

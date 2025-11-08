@@ -8,7 +8,8 @@
     padding: 0;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     font-family: 'Poppins', sans-serif;
     background-color: white;
@@ -102,7 +103,8 @@ header {
     z-index: 0;
 }
 
-.apresentacao h1, .apresentacao p {
+.apresentacao h1,
+.apresentacao p {
     position: relative;
     z-index: 1;
 }
@@ -204,24 +206,41 @@ header {
 /* ===============================
    🎥 VÍDEO
 =============================== */
+/* Container Principal: Adiciona um visual mais limpo e profissional */
 .video {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+    gap: 40px; /* Aumenta o espaço entre os itens para melhor legibilidade */
+    padding: 60px 40px; /* Ajusta o padding para mais espaço interno */
+    background: linear-gradient(135deg, #66cccc, #f5f4f3); /* Adiciona um ângulo ao gradiente para um visual mais dinâmico */
+    border-radius: 15px; /* Bordas levemente suavizadas */
+    margin: 80px 50px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave para profundidade */
+    transition: transform 0.3s ease-in-out; /* Adiciona uma transição para interatividade */
+}
+/* Efeito de Hover: Faz o container levantar um pouco ao passar o mouse */
+.video:hover {
+    transform: translateY(-5px);
 }
 
+/* Elementos de Vídeo: Mantém a responsividade e adiciona sombra */
 .video video {
-    max-width: 400px;
+    max-width: 400px; /* Levemente mais largo */
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px; /* Bordas do vídeo */
+    box-shadow: 0 5px 15px #957b46; /* Sombra para o vídeo */
 }
 
+/* Parágrafos: Melhor tipografia e legibilidade */
 .video p {
     max-width: 500px;
     text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas para melhor leitura */
+    color: #404040; /* Cor um pouco mais escura para contraste */
 }
 
 /* ===============================
@@ -255,7 +274,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px auto;
+    margin: 15px 10px 50px 250px;
+
 }
 
 .whatsapp-button {
@@ -263,7 +283,15 @@ header {
     border-color: #957b46 !important;
     color: white !important;
     font-family: 'Poppins', sans-serif !important;
+    position: relative !important;
+    bottom: 230px;
+    left: 120px;
 }
+
+.whatsapp-button:hover {
+    transform: scale(1.2);
+}
+
 
 /* ===============================
    🦶 RODAPÉ
@@ -286,7 +314,9 @@ footer {
 
 /* Tablets */
 @media (max-width: 1024px) {
-    .informe, .video {
+
+    .informe,
+    .video {
         flex-direction: column;
         text-align: center;
         margin: 50px auto;
@@ -308,7 +338,8 @@ footer {
         max-height: 60px;
     }
 
-    .informe, .video {
+    .informe,
+    .video {
         flex-direction: column;
         margin: 40px 20px;
     }
