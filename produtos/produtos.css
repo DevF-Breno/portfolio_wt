@@ -158,7 +158,7 @@ section.produtos {
     color: #222121;
     /*cor do parágrafo*/
     line-height: 1.5;
-    /*altura da linha*/
+    /*altura da linha*/    
 }
 
 /* Estilo geral do container */
@@ -280,13 +280,61 @@ section.produtos {
     width: 400px;
 }
 
-.descricao ul {
-    margin: 30px 100px 0px 90px;
+/*Aba dos produto descrição paragráfo */
+/* --- Estilos Gerais de Tipografia para as Descrições --- */
+.tab-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem; /* Tamanho de fonte padrão */
+    line-height: 1.6; /* Essencial para boa leitura em blocos de texto */
+    color: #4B221F; /* Cor de texto suave, mas legível */
+    margin-bottom: 20px; /* Espaço após cada parágrafo */
+    text-align: justify; /* Deixa o texto alinhado nas duas margens */
+}
+/* --- Estilos para Listas (UL e OL) --- */
+
+/* Aplica a mesma fonte base para todos os itens de lista */
+.tab-content ul, 
+.tab-content ol {
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    color: #4B221F;
+    margin: 15px 0 15px 20px; /* Espaçamento superior/inferior e recuo */
+    padding: 0;
+}
+/* Estilo para Itens de Lista (li) */
+.tab-content li {
+    margin-bottom: 12px; /* Espaço entre itens da lista */
+    line-height: 1.4;
+    font-size: 0.95rem; /* Levemente menor que o parágrafo para contraste */
+}
+/* --- Aprimoramento Específico para Listas Ordenadas (Modo de Uso) --- */
+
+.tab-content ol li {
+    /* Garante que o número e o texto se alinhem bem */
+    padding-left: 10px; 
+}
+/* Estilo para os títulos em negrito dentro das listas ordenadas (Ex: "Lavar:") */
+.tab-content ol li strong {
+    color: #4B221F; /* Garante que o título se destaque bem */
+}
+/* --- Aprimoramento Específico para Listas Não Ordenadas (Ingredientes) --- */
+
+.tab-content ul {
+    list-style: none; /* Remove o marcador de disco padrão */
+    padding-left: 0; /* Remove o padding padrão que dá espaço para os discos */
+    margin: 15px 0; /* Ajusta a margem da lista inteira */
 }
 
-.mduso p {
-    margin: 0px 0px px 90px;
+.tab-content ul li {
+    text-align: justify;
+    padding-left: 30px; /* Adiciona espaço para o ícone personalizado */
+    position: relative; /* Essencial para posicionar o ícone de forma absoluta */
+    margin-bottom: 12px;
+    line-height: 1.4;
+    font-size: 0.95rem;
+    color: #4B221F;
 }
+
 
 footer {
     background-color: antiquewhite;

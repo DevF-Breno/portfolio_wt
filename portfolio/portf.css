@@ -228,14 +228,21 @@ header {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 40px; /* Aumenta o espaço entre os itens para melhor legibilidade */
-    padding: 60px 40px; /* Ajusta o padding para mais espaço interno */
-    background: linear-gradient(135deg, #66cccc, #f5f4f3); /* Adiciona um ângulo ao gradiente para um visual mais dinâmico */
-    border-radius: 15px; /* Bordas levemente suavizadas */
+    gap: 40px;
+    /* Aumenta o espaço entre os itens para melhor legibilidade */
+    padding: 60px 40px;
+    /* Ajusta o padding para mais espaço interno */
+    background: linear-gradient(135deg, #66cccc, #f5f4f3);
+    /* Adiciona um ângulo ao gradiente para um visual mais dinâmico */
+    border-radius: 15px;
+    /* Bordas levemente suavizadas */
     margin: 80px 50px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave para profundidade */
-    transition: transform 0.3s ease-in-out; /* Adiciona uma transição para interatividade */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    /* Adiciona uma sombra suave para profundidade */
+    transition: transform 0.3s ease-in-out;
+    /* Adiciona uma transição para interatividade */
 }
+
 /* Efeito de Hover: Faz o container levantar um pouco ao passar o mouse */
 .video:hover {
     transform: translateY(-5px);
@@ -243,10 +250,13 @@ header {
 
 /* Elementos de Vídeo: Mantém a responsividade e adiciona sombra */
 .video video {
-    max-width: 400px; /* Levemente mais largo */
+    max-width: 400px;
+    /* Levemente mais largo */
     width: 100%;
-    border-radius: 10px; /* Bordas do vídeo */
-    box-shadow: 0 5px 15px #957b46; /* Sombra para o vídeo */
+    border-radius: 10px;
+    /* Bordas do vídeo */
+    box-shadow: 0 5px 15px #957b46;
+    /* Sombra para o vídeo */
 }
 
 /* Parágrafos: Melhor tipografia e legibilidade */
@@ -255,8 +265,10 @@ header {
     text-align: justify;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    line-height: 1.6; /* Aumenta o espaçamento entre linhas para melhor leitura */
-    color: #404040; /* Cor um pouco mais escura para contraste */
+    line-height: 1.6;
+    /* Aumenta o espaçamento entre linhas para melhor leitura */
+    color: #404040;
+    /* Cor um pouco mais escura para contraste */
 }
 
 /* ===============================
