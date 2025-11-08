@@ -163,26 +163,42 @@ header {
    🧴 CATEGORIAS
 =============================== */
 .categoria {
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     gap: 70px;
-    padding: 50px 0;
-    text-align: center;
+    flex-wrap: wrap;
+    /*faz que as imagens quebrem linha*/
+    align-items: center;
+    padding-top: 50px;
+    margin-left: 180px;
+}
+
+.categoria img {
+    width: 250px;
 }
 
 .categoria a {
     text-decoration: none;
+    /*remove o sublinhado dos links*/
     color: rgb(64, 64, 64);
+    /*cor da fonte*/
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    /*deixa a fonte em negrito*/
+    text-align: center;
+    display: block;
+    margin-top: 10px;
     font-size: 20px;
 }
 
 .categoria a:hover {
     color: #c7a45d;
-    transform: scale(1.05);
-    transition: 0.3s ease;
+    /*tom dourado ao passar o mouse*/
+    transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1);
+    /* efeito de zoom ao passar o mouse */
+    transition: transform 0.3s ease;
+    /* suaviza a transição do efeito */
+    font-weight: bold;
 }
 
 /* ===============================
