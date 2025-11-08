@@ -289,21 +289,21 @@ header {
     flex-wrap: wrap;
 }
 
-.lanc h1{
+.lanc h1 {
     text-align: center;
 }
 
-.lanc h3{
+.lanc h3 {
     text-align: center;
 }
 
-.lanc p{
+.lanc p {
     position: relative;
     left: 200px;
     margin: 0px 100px 0px 0px;
 }
 
-.video video{
+.video video {
     position: relative;
     right: 200px;
 }
@@ -350,6 +350,22 @@ header {
 .whatsapp-button-container {
     display: block;
     text-align: center;
+    padding: 20px 35px;
+    border-radius: 15px;
+}
+
+.whatsapp-button {
+    background-color: #957b46;
+    /* cor de fundo*/
+    color: white;
+    /*cor da fonte*/
+    /* IMPORTANTE: Adicione !important se a cor do Bootstrap não sumir. */
+    /* Se o Bootstrap (btn-success) estiver forçando o verde: */
+    background-color: #957b46 !important;
+    border-color: #957b46 !important;
+    /* Para garantir que a borda também mude */
+    font-size: 80% !important;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 
@@ -380,6 +396,7 @@ header {
     bottom: 15px;
     width: 50px;
 }
+
 footer {
     background-color: antiquewhite;
     /*cor de fundo da página*/
@@ -429,6 +446,7 @@ footer {
 
 /* Corrigindo o erro de escrita "max-widht" → "max-width" */
 @media (max-width: 1024px) {
+
     /* Tablets */
     .informe {
         flex-direction: column;
@@ -544,7 +562,8 @@ footer {
         text-align: center;
     }
 
-    .lanc h3, .lanc h1 {
+    .lanc h3,
+    .lanc h1 {
         text-align: center;
     }
 

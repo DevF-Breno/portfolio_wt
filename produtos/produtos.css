@@ -267,14 +267,6 @@ section.produtos {
     /*exibe o conteúdo ativo*/
 }
 
-/* Estilo responsivo */
-@media (max-width: 600px) {
-    .produto-grid {
-        grid-template-columns: 1fr;
-        /*uma coluna em telas pequenas*/
-    }
-}
-
 /*FIM PRODUTO1-TRATAMENTO-JÉSSICA   */
 
 .produto p {
@@ -313,4 +305,12 @@ footer {
     /*faz com que o rodapé ocupe 100% da largura da página*/
     font-family: 'Poppins', sans-serif;
     /*define a fonte padrão*/
+}
+
+/* Estilo responsivo */
+@media (max-width: 600px) {
+    .produto-grid {
+        grid-template-columns: 1fr;
+        /*uma coluna em telas pequenas*/
+    }
 }
