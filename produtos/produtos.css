@@ -1,22 +1,22 @@
+/* ========================================
+   🔧 RESET GLOBAL
+======================================== */
 * {
-    box-sizing: border-box;
-    /*inclui padding e border na largura e altura totais do elemento*/
-    max-width: 100%;
-    /*impede que os elementos ultrapassem a largura da tela*/
-    margin: 0;
-    /*remove a margem padrão dos elementos*/
-    padding: 0;
-    /*remove o padding padrão dos elementos*/
+    box-sizing: border-box; /* inclui padding e border na largura e altura totais do elemento */
+    max-width: 100%; /* impede que os elementos ultrapassem a largura da tela */
+    margin: 0; /* remove a margem padrão dos elementos */
+    padding: 0; /* remove o padding padrão dos elementos */
 }
 
-
+/* ========================================
+   🎨 BODY & ESTRUTURA GERAL
+======================================== */
 body {
     background-color: antiquewhite;
 }
 
 header {
-    position: sticky;
-    /*faz que o header grude na tela*/
+    position: sticky; /* faz com que o header grude na tela */
     top: 0;
     z-index: 3;
 }
@@ -43,233 +43,213 @@ header {
     margin-bottom: 207px;
 }
 
-/* COMEÇO PRODUTO1 - TRATAMENTO PROFISSIONAL - JÉSSICA*/
+/* ========================================
+   💆 PRODUTOS - TRATAMENTO PROFISSIONAL
+======================================== */
 section.produtos {
     background-color: #ffffff;
-    /*cor de fundo da seção*/
     padding: 40px 20px;
-    /*espaço interno da seção*/
     font-family: 'Poppins', sans-serif;
-    /*define a fonte padrão*/
-      
 }
 
 .produtos h2 {
     text-align: center;
-    /*centraliza o título*/
     margin: 20px 0;
-    /*espaço acima e abaixo do título*/
     font-size: 2em;
-    /*tamanho da fonte do título*/
     color: #c7a45d;
-    /*cor do título*/
     font-weight: bold;
-    /*deixa a fonte em negrito*/
 }
 
 .produtos .produto-item h3 {
     text-align: center;
-    /*centraliza o subtítulo*/
     margin: 10px 0;
-    /*espaço acima e abaixo do subtítulo*/
     font-size: 1.5em;
-    /*tamanho da fonte do subtítulo*/
     color: #c7a45d;
-    /*cor do subtítulo*/
     font-weight: bolder;
-    /*deixa a fonte em negrito*/
 }
 
 .produtos p {
     text-align: justify;
-    /*alinha o texto nas duas margens*/
     font-size: 1em;
-    /*tamanho da fonte do parágrafo*/
     color: #3b3030;
-    /*cor do parágrafo*/
     margin-bottom: 20px;
-    /*espaço abaixo do parágrafo*/
 }
 
+/* ========================================
+   🧱 GRID DE PRODUTOS
+======================================== */
 .produto-grid {
     display: grid;
-    /*define o container como grade*/
     grid-template-columns: 1fr 1fr 1fr;
-    /*grade responsiva*/
     gap: 20px;
-    /*espaço entre os itens*/
     padding: 20px;
-    /*espaço interno*/
     max-width: 1200px;
-    /*largura máxima da grade*/
     margin: 0 auto;
-    /*centraliza a grade*/
 }
 
 .produto-item {
     background-color: antiquewhite;
-    /*cor de fundo dos itens*/
     border: 1px solid #ddd;
-    /*borda dos itens*/
     border-radius: 8px;
-    /*bordas arredondadas*/
     overflow: hidden;
-    /*remove o excesso de conteúdo*/
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /*sombra dos itens*/
     padding: 15px;
-    /*espaço interno dos itens*/
     transform: 0.3s;
-    /*transição suave*/
 }
 
 .produto-item:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    /*sombra ao passar o mouse*/
     transform: translateY(-5px);
-    /*eleva o item ao passar o mouse*/
 }
 
 .produto-item img {
     width: 100%;
-    /*imagem responsiva*/
     height: auto;
-    /*mantém a proporção da imagem*/
     border-bottom: 1px solid #ddd;
-    /*borda inferior da imagem*/
     margin-bottom: 10px;
-    /*espaço abaixo da imagem*/
     display: block;
-    /*remove espaço em branco abaixo da imagem*/
 }
 
 .produto-item h3 {
     font-size: 1.2em;
-    /*tamanho da fonte do título*/
     margin-bottom: 10px;
-    /*espaço abaixo do título*/
     color: #1d1d1d;
-    /*cor do título*/
 }
 
 .produto-item p {
     font-size: 1em;
-    /*tamanho da fonte do parágrafo*/
     color: #222121;
-    /*cor do parágrafo*/
     line-height: 1.5;
-    /*altura da linha*/    
 }
 
-/* Estilo geral do container */
+/* ========================================
+   🧩 ABAS DE PRODUTOS
+======================================== */
 .tabs-container {
     max-width: 800px;
-    /*largura máxima do container de abas*/
     margin: 20px auto;
-    /*centraliza o container de abas*/
     font-family: sans-serif;
-    /*define a fonte padrão*/
     border: 1px solid #ddd;
-    /*borda do container de abas*/
     border-radius: 8px;
-    /*bordas arredondadas*/
     overflow: hidden;
-    /*remove o excesso de conteúdo*/
 }
 
-/* Estilo dos botões das abas */
 .tab-buttons {
     display: flex;
-    /*alinha os botões em linha*/
     border-bottom: 1px solid #ddd;
-    /*borda inferior dos botões*/
     border: #c5eb39;
-    /*cor de fundo dos botões*/
 }
 
 .tab-button {
     flex: 1;
-    /*cada botão ocupa o mesmo espaço*/
     padding: 10px;
-    /*espaço interno dos botões*/
     background-color: #f1f1f1;
-    /*cor de fundo dos botões*/
     border: none;
-    /*remove a borda dos botões*/
     cursor: pointer;
-    /*muda o cursor ao passar sobre os botões*/
     font-size: 1em;
-    /*tamanho da fonte dos botões*/
     transition: background-color 0.3s;
-    /*transição suave ao mudar a cor de fundo*/
 }
 
 .tab-button:hover {
     background-color: #ddd;
-    /*cor de fundo ao passar o mouse*/
     display: inline-block;
-    /*exibe o botão como bloco inline*/
-
 }
 
 .tab-button.active {
     background-color: #fff;
-    /*cor de fundo do botão ativo*/
     border-bottom: 2px solid #5a5a5a;
-    /*borda inferior do botão ativo*/
     font-weight: bold;
-    /*deixa a fonte em negrito*/
     color: #333;
-    /*cor da fonte do botão ativo*/
     display: inline-block;
-    /*exibe o botão ativo como bloco inline*/
 }
-.whatsapp-button-container{
+
+/* ========================================
+   💬 BOTÃO WHATSAPP
+======================================== */
+.whatsapp-button-container {
     display: block;
     text-align: center;
     padding: 5px 8px;
     border-radius: 4px;
-    
 }
+
 .whatsapp-button {
-    background-color: #957b46; /* cor de fundo*/
-    color: white; /*cor da fonte*/
-    /* IMPORTANTE: Adicione !important se a cor do Bootstrap não sumir. */
-    /* Se o Bootstrap (btn-success) estiver forçando o verde: */
-    background-color: #957b46 !important; 
-    border-color:#957b46 !important; /* Para garantir que a borda também mude */
+    background-color: #957b46 !important;
+    color: white;
+    border-color: #957b46 !important;
     font-size: 80% !important;
     font-family: 'Poppins', sans-serif !important;
 }
 
-/* Ajuste a cor de hover da aba para um tom mais suave se quiser */
-.tab-button:hover {
-    background-color: #ddd;
-    /* Se você quiser um hover que combine: background-color: #eadfc9; */
-    display: inline-block;
-}
-
-/* Estilo do conteúdo das abas */
+/* ========================================
+   📑 CONTEÚDO DAS ABAS
+======================================== */
 .tab-content {
     display: none;
-    /*oculta o conteúdo das abas*/
     padding: 20px;
-    /*espaço interno do conteúdo*/
     border-top: none;
-    /*remove a borda superior*/
     background-color: #fff;
-    /*cor de fundo do conteúdo*/
     text-align: left;
 }
 
-/* Exibe o conteúdo ativo */
 .tab-content.active {
     display: block;
-    /*exibe o conteúdo ativo*/
 }
 
-/*FIM PRODUTO1-TRATAMENTO-JÉSSICA   */
+/* ========================================
+   📄 DESCRIÇÕES E LISTAS DENTRO DAS ABAS
+======================================== */
+.tab-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4B221F;
+    margin-bottom: 20px;
+    text-align: justify;
+}
 
+.tab-content ul,
+.tab-content ol {
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    color: #4B221F;
+    margin: 15px 0 15px 20px;
+    padding: 0;
+}
+
+.tab-content li {
+    margin-bottom: 12px;
+    line-height: 1.4;
+    font-size: 0.95rem;
+}
+
+.tab-content ol li {
+    padding-left: 10px;
+}
+
+.tab-content ol li strong {
+    color: #4B221F;
+}
+
+.tab-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 15px 0;
+}
+
+.tab-content ul li {
+    text-align: justify;
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    font-size: 0.95rem;
+    color: #4B221F;
+}
+
+/* ========================================
+   🖼️ IMAGENS E TEXTOS DE PRODUTO
+======================================== */
 .produto p {
     margin: 100px 150px 0px 100px;
 }
@@ -280,86 +260,52 @@ section.produtos {
     width: 400px;
 }
 
-/*Aba dos produto descrição paragráfo */
-/* --- Estilos Gerais de Tipografia para as Descrições --- */
-.tab-content p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem; /* Tamanho de fonte padrão */
-    line-height: 1.6; /* Essencial para boa leitura em blocos de texto */
-    color: #4B221F; /* Cor de texto suave, mas legível */
-    margin-bottom: 20px; /* Espaço após cada parágrafo */
-    text-align: justify; /* Deixa o texto alinhado nas duas margens */
-}
-/* --- Estilos para Listas (UL e OL) --- */
-
-/* Aplica a mesma fonte base para todos os itens de lista */
-.tab-content ul, 
-.tab-content ol {
-    text-align: justify;
-    font-family: 'Poppins', sans-serif;
-    color: #4B221F;
-    margin: 15px 0 15px 20px; /* Espaçamento superior/inferior e recuo */
-    padding: 0;
-}
-/* Estilo para Itens de Lista (li) */
-.tab-content li {
-    margin-bottom: 12px; /* Espaço entre itens da lista */
-    line-height: 1.4;
-    font-size: 0.95rem; /* Levemente menor que o parágrafo para contraste */
-}
-/* --- Aprimoramento Específico para Listas Ordenadas (Modo de Uso) --- */
-
-.tab-content ol li {
-    /* Garante que o número e o texto se alinhem bem */
-    padding-left: 10px; 
-}
-/* Estilo para os títulos em negrito dentro das listas ordenadas (Ex: "Lavar:") */
-.tab-content ol li strong {
-    color: #4B221F; /* Garante que o título se destaque bem */
-}
-/* --- Aprimoramento Específico para Listas Não Ordenadas (Ingredientes) --- */
-
-.tab-content ul {
-    list-style: none; /* Remove o marcador de disco padrão */
-    padding-left: 0; /* Remove o padding padrão que dá espaço para os discos */
-    margin: 15px 0; /* Ajusta a margem da lista inteira */
-}
-
-.tab-content ul li {
-    text-align: justify;
-    padding-left: 30px; /* Adiciona espaço para o ícone personalizado */
-    position: relative; /* Essencial para posicionar o ícone de forma absoluta */
-    margin-bottom: 12px;
-    line-height: 1.4;
-    font-size: 0.95rem;
-    color: #4B221F;
-}
-
-
+/* ========================================
+   🦶 RODAPÉ
+======================================== */
 footer {
     background-color: antiquewhite;
-    /*cor de fundo da página*/
     color: #957b46;
-    /*cor da fonte*/
     font-weight: bold;
-    /*deixa a fonte em negrito*/
     font-size: small;
     text-align: center;
-    /*alinha o texto ao centro*/
     padding: 5px;
-    /*espaço interno*/
     bottom: 0;
-    /*faz com que o rodapé fique na parte inferior da página*/
     width: 100%;
-    /*faz com que o rodapé ocupe 100% da largura da página*/
     font-family: 'Poppins', sans-serif;
-    /*define a fonte padrão*/
 }
 
-/* Estilo responsivo */
+/* ========================================
+   📱 RESPONSIVIDADE
+======================================== */
 @media (max-width: 600px) {
     .produto-grid {
-        grid-template-columns: 1fr;
-        /*uma coluna em telas pequenas*/
+        grid-template-columns: 1fr; /* uma coluna em telas pequenas */
+    }
+
+    .img_produto img {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .produto p {
+        margin: 20px;
+        text-align: justify;
+    }
+
+    .tabs-container {
+        max-width: 95%;
+        margin: 10px auto;
+    }
+
+    .tab-button {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    footer {
+        font-size: smaller;
+        padding: 10px;
     }
 }

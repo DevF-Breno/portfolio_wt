@@ -14,8 +14,6 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: white;
     overflow-x: hidden;
-    overflow-y: scroll;
-    scrollbar-width: none;
     scroll-behavior: smooth;
 }
 
@@ -43,9 +41,6 @@ header {
     font-weight: 300;
     letter-spacing: 0.5px;
     text-align: center;
-}
-
-.navbar {
     background-color: #f6e7b9;
 }
 
@@ -76,7 +71,6 @@ header {
 
 .redes img {
     width: 25px;
-    height: auto;
     transition: 0.3s ease;
 }
 
@@ -167,10 +161,9 @@ header {
     display: flex;
     gap: 70px;
     flex-wrap: wrap;
-    /*faz que as imagens quebrem linha*/
     align-items: center;
-    padding-top: 50px;
-    margin-left: 180px;
+    justify-content: center;
+    padding: 50px 20px;
 }
 
 .categoria img {
@@ -179,12 +172,9 @@ header {
 
 .categoria a {
     text-decoration: none;
-    /*remove o sublinhado dos links*/
     color: rgb(64, 64, 64);
-    /*cor da fonte*/
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    /*deixa a fonte em negrito*/
     text-align: center;
     display: block;
     margin-top: 10px;
@@ -193,11 +183,8 @@ header {
 
 .categoria a:hover {
     color: #c7a45d;
-    /*tom dourado ao passar o mouse*/
-    transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1);
-    /* efeito de zoom ao passar o mouse */
+    transform: scale(1.05);
     transition: transform 0.3s ease;
-    /* suaviza a transição do efeito */
     font-weight: bold;
 }
 
@@ -222,53 +209,37 @@ header {
 /* ===============================
    🎥 VÍDEO
 =============================== */
-/* Container Principal: Adiciona um visual mais limpo e profissional */
 .video {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 40px;
-    /* Aumenta o espaço entre os itens para melhor legibilidade */
     padding: 60px 40px;
-    /* Ajusta o padding para mais espaço interno */
     background: linear-gradient(135deg, #66cccc, #f5f4f3);
-    /* Adiciona um ângulo ao gradiente para um visual mais dinâmico */
     border-radius: 15px;
-    /* Bordas levemente suavizadas */
     margin: 80px 50px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    /* Adiciona uma sombra suave para profundidade */
     transition: transform 0.3s ease-in-out;
-    /* Adiciona uma transição para interatividade */
 }
 
-/* Efeito de Hover: Faz o container levantar um pouco ao passar o mouse */
 .video:hover {
     transform: translateY(-5px);
 }
 
-/* Elementos de Vídeo: Mantém a responsividade e adiciona sombra */
 .video video {
     max-width: 400px;
-    /* Levemente mais largo */
     width: 100%;
     border-radius: 10px;
-    /* Bordas do vídeo */
     box-shadow: 0 5px 15px #957b46;
-    /* Sombra para o vídeo */
 }
 
-/* Parágrafos: Melhor tipografia e legibilidade */
 .video p {
     max-width: 500px;
     text-align: justify;
-    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     line-height: 1.6;
-    /* Aumenta o espaçamento entre linhas para melhor leitura */
     color: #404040;
-    /* Cor um pouco mais escura para contraste */
 }
 
 /* ===============================
@@ -302,8 +273,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px 10px 50px 250px;
-
+    margin: 40px auto;
 }
 
 .whatsapp-button {
@@ -311,15 +281,12 @@ header {
     border-color: #957b46 !important;
     color: white !important;
     font-family: 'Poppins', sans-serif !important;
-    position: relative !important;
-    bottom: 230px;
-    left: 120px;
+    transition: transform 0.3s ease;
 }
 
 .whatsapp-button:hover {
     transform: scale(1.2);
 }
-
 
 /* ===============================
    🦶 RODAPÉ
@@ -383,6 +350,7 @@ footer {
     .categoria {
         flex-direction: column;
         gap: 30px;
+        margin-left: 0;
     }
 
     .video video {
@@ -395,6 +363,10 @@ footer {
 
     .apresentacao p {
         font-size: 18px;
+    }
+
+    .whatsapp-button-container {
+        margin: 20px auto;
     }
 
     footer {
