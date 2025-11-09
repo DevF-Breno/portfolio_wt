@@ -70,7 +70,7 @@ header {
 }
 
 .redes img {
-    width: 25px;
+    width: 40px;
     transition: 0.3s ease;
 }
 
@@ -143,7 +143,7 @@ header {
 
 .sobre h1 {
     margin-bottom: 20px;
-    color: #957b46;
+    color: #D7C48D;
 }
 
 #sobre p {
@@ -158,12 +158,12 @@ header {
 =============================== */
 .categoria {
     position: relative;
-    display: flex;
+    display:flex;
     gap: 70px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 50px 20px;
+    padding: 100px 20px;
 }
 
 .categoria img {
@@ -195,7 +195,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #957b46;
+    color: #D7C48D;
     text-align: center;
     gap: 20px;
 }
