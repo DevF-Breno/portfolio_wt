@@ -14,21 +14,69 @@
 body {
     background-color: antiquewhite;
 }
-
 header {
-    position: sticky; /* faz com que o header grude na tela */
+    width: 100%;
+    position: sticky;
     top: 0;
-    z-index: 3;
+    z-index: 2;
 }
 
-.navbar-nav {
-    width: 93%;
-    justify-content: center;
+.navbar {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: center;
+    background-color: #f6e7b9;
+}
+
+.nav-link {
+    color: #7c7c7c;
+    padding: 0 15px;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: #c7a45d !important;
+    font-weight: bold;
+    transform: scale(1.05);
 }
 
 .navbar-brand img {
+    max-height: 100px;
     width: 100px;
 }
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.redes img {
+    width: 40px;
+    transition: 0.3s ease;
+}
+
+.redes a:hover img {
+    transform: scale(1.2);
+}
+
+/*header {
+    position: sticky;  faz com que o header grude na tela 
+    top: 0;
+    z-index: 3;
+}*/
+
+/*.navbar-nav {
+    width: 93%;
+    justify-content: center;
+}*/
+
+/*.navbar-brand img {
+    width: 100px;
+}*/
 
 .informe_produto {
     display: flex;
@@ -264,7 +312,7 @@ section.produtos {
    🦶 RODAPÉ
 ======================================== */
 footer {
-    background-color: antiquewhite;
+    background-color: #f6e7b9;
     color: #957b46;
     font-weight: bold;
     font-size: small;

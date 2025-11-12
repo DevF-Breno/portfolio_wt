@@ -38,7 +38,8 @@ header {
 }
 
 .navbar {
-    font-weight: 300;
+    font-size: 1.2rem;
+    font-weight: 500;
     letter-spacing: 0.5px;
     text-align: center;
     background-color: #f6e7b9;
@@ -52,7 +53,7 @@ header {
 
 .nav-link:hover,
 .nav-link:active {
-    color: #c7a45d;
+    color: #c7a45d !important;
     font-weight: bold;
     transform: scale(1.05);
 }
@@ -70,7 +71,7 @@ header {
 }
 
 .redes img {
-    width: 25px;
+    width: 40px;
     transition: 0.3s ease;
 }
 
@@ -143,7 +144,7 @@ header {
 
 .sobre h1 {
     margin-bottom: 20px;
-    color: #957b46;
+    color: #D7C48D;
 }
 
 #sobre p {
@@ -158,12 +159,12 @@ header {
 =============================== */
 .categoria {
     position: relative;
-    display: flex;
+    display:flex;
     gap: 70px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 50px 20px;
+    padding: 100px 20px;
 }
 
 .categoria img {
@@ -195,7 +196,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #957b46;
+    color: #D7C48D;
     text-align: center;
     gap: 20px;
 }
@@ -292,7 +293,7 @@ header {
    🦶 RODAPÉ
 =============================== */
 footer {
-    background-color: antiquewhite;
+    background-color: #f6e7b9;
     color: #957b46;
     font-weight: bold;
     font-size: small;
