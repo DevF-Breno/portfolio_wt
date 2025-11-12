@@ -192,7 +192,7 @@ header {
 /* ===============================
     LANÇAMENTOS
 =============================== */
-.lanc {
+.lançamento {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -201,7 +201,7 @@ header {
     gap: 20px;
 }
 
-.lanc p {
+.lançamento p {
     max-width: 800px;
     text-align: justify;
     margin: 0 auto;
