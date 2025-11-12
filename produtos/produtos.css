@@ -1,5 +1,5 @@
 /* ========================================
-   🔧 RESET GLOBAL
+    RESET GLOBAL
 ======================================== */
 * {
     box-sizing: border-box; /* inclui padding e border na largura e altura totais do elemento */
@@ -9,7 +9,7 @@
 }
 
 /* ========================================
-   🎨 BODY & ESTRUTURA GERAL
+   BODY & ESTRUTURA GERAL
 ======================================== */
 body {
     background-color: antiquewhite;
@@ -92,7 +92,7 @@ header {
 }
 
 /* ========================================
-   💆 PRODUTOS - TRATAMENTO PROFISSIONAL
+    PRODUTOS - TRATAMENTO PROFISSIONAL
 ======================================== */
 section.produtos {
     background-color: #ffffff;
@@ -124,7 +124,7 @@ section.produtos {
 }
 
 /* ========================================
-   🧱 GRID DE PRODUTOS
+   GRID DE PRODUTOS
 ======================================== */
 .produto-grid {
     display: grid;
@@ -171,7 +171,7 @@ section.produtos {
 }
 
 /* ========================================
-   🧩 ABAS DE PRODUTOS
+    ABAS DE PRODUTOS
 ======================================== */
 .tabs-container {
     max-width: 800px;
@@ -212,7 +212,7 @@ section.produtos {
 }
 
 /* ========================================
-   💬 BOTÃO WHATSAPP
+    BOTÃO WHATSAPP
 ======================================== */
 .whatsapp-button-container {
     display: block;
@@ -230,7 +230,7 @@ section.produtos {
 }
 
 /* ========================================
-   📑 CONTEÚDO DAS ABAS
+    CONTEÚDO DAS ABAS
 ======================================== */
 .tab-content {
     display: none;
@@ -245,7 +245,7 @@ section.produtos {
 }
 
 /* ========================================
-   📄 DESCRIÇÕES E LISTAS DENTRO DAS ABAS
+    DESCRIÇÕES E LISTAS DENTRO DAS ABAS
 ======================================== */
 .tab-content p {
     font-family: 'Poppins', sans-serif;
@@ -296,7 +296,7 @@ section.produtos {
 }
 
 /* ========================================
-   🖼️ IMAGENS E TEXTOS DE PRODUTO
+    IMAGENS E TEXTOS DE PRODUTO
 ======================================== */
 .produto p {
     margin: 100px 150px 0px 100px;
@@ -309,7 +309,7 @@ section.produtos {
 }
 
 /* ========================================
-   🦶 RODAPÉ
+    RODAPÉ
 ======================================== */
 footer {
     background-color: #f6e7b9;
@@ -324,7 +324,7 @@ footer {
 }
 
 /* ========================================
-   📱 RESPONSIVIDADE
+    RESPONSIVIDADE
 ======================================== */
 @media (max-width: 600px) {
     .produto-grid {
