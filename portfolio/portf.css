@@ -1,5 +1,5 @@
 /* ===============================
-   🌸 BASE E ESTRUTURA
+    BASE E ESTRUTURA
 =============================== */
 * {
     box-sizing: border-box;
@@ -28,7 +28,7 @@ main {
 }
 
 /* ===============================
-   🔝 CABEÇALHO
+    CABEÇALHO
 =============================== */
 header {
     width: 100%;
@@ -80,7 +80,7 @@ header {
 }
 
 /* ===============================
-   🎬 APRESENTAÇÃO
+    APRESENTAÇÃO
 =============================== */
 .apresentacao {
     position: relative;
@@ -109,7 +109,7 @@ header {
 }
 
 /* ===============================
-   💡 INFORME
+    INFORME
 =============================== */
 .informe {
     display: flex;
@@ -134,7 +134,7 @@ header {
 }
 
 /* ===============================
-   💬 SOBRE
+    SOBRE
 =============================== */
 .sobre {
     max-width: 400px;
@@ -155,7 +155,7 @@ header {
 }
 
 /* ===============================
-   🧴 CATEGORIAS
+    CATEGORIAS
 =============================== */
 .categoria {
     position: relative;
@@ -190,7 +190,7 @@ header {
 }
 
 /* ===============================
-   🌸 LANÇAMENTOS
+    LANÇAMENTOS
 =============================== */
 .lançamento {
     display: flex;
@@ -208,7 +208,7 @@ header {
 }
 
 /* ===============================
-   🎥 VÍDEO
+    VÍDEO
 =============================== */
 .video {
     display: flex;
@@ -244,7 +244,7 @@ header {
 }
 
 /* ===============================
-   💬 CONTATO
+    CONTATO
 =============================== */
 .contato {
     text-align: center;
@@ -268,7 +268,7 @@ header {
 }
 
 /* ===============================
-   💬 WHATSAPP
+    WHATSAPP
 =============================== */
 .whatsapp-button-container {
     display: flex;
@@ -290,7 +290,7 @@ header {
 }
 
 /* ===============================
-   🦶 RODAPÉ
+    RODAPÉ
 =============================== */
 footer {
     background-color: #f6e7b9;
@@ -305,7 +305,7 @@ footer {
 }
 
 /* ===============================
-   📱 RESPONSIVIDADE
+   RESPONSIVIDADE
 =============================== */
 
 /* Tablets */
