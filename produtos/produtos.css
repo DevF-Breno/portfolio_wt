@@ -26,7 +26,7 @@ header {
     font-weight: 500;
     letter-spacing: 0.5px;
     text-align: center;
-    background-color: antiquewhite;
+    background-color: #f6e7b9;
 }
 
 .nav-link {
@@ -37,7 +37,7 @@ header {
 
 .nav-link:hover,
 .nav-link:active {
-    color: #c7a45d;
+    color: #c7a45d !important;
     font-weight: bold;
     transform: scale(1.05);
 }
@@ -312,7 +312,7 @@ section.produtos {
    🦶 RODAPÉ
 ======================================== */
 footer {
-    background-color: antiquewhite;
+    background-color: #f6e7b9;
     color: #957b46;
     font-weight: bold;
     font-size: small;
